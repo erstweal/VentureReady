@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from 'react';
 import { ArrowRight, FileText, TrendingUp, Target, Check, Menu, X, Briefcase } from 'lucide-react';
 
