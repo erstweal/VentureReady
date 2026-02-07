@@ -120,7 +120,7 @@ export default function VentureReadyLanding() {
                 </div>
                 <div className="h-12 w-px bg-stone-300"></div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-stone-900">NEF</div>
+                  <div className="text-3xl font-bold text-stone-900">VentureReady</div>
                   <div className="text-sm text-stone-600">Framework Based</div>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function VentureReadyLanding() {
               </div>
               <h3 className="text-xl font-bold text-stone-900 mb-3">Comprehensive Analysis</h3>
               <p className="text-stone-600">
-                Every section of your pitch deck evaluated against the proven NEF (New Enterprise Forum) framework used by investors worldwide.
+                Every section of your pitch deck evaluated against the proven VentureReady framework used by investors worldwide.
               </p>
             </div>
 
@@ -244,7 +244,7 @@ export default function VentureReadyLanding() {
               <div>
                 <h3 className="text-2xl font-bold text-stone-900 mb-2">AI Evaluation</h3>
                 <p className="text-lg text-stone-600">
-                  Our AI analyzes your materials against the NEF framework, scoring each section and identifying strengths and weaknesses.
+                  Our AI analyzes your materials against the VentureReady framework, scoring each section and identifying strengths and weaknesses.
                 </p>
               </div>
             </div>
@@ -293,7 +293,7 @@ export default function VentureReadyLanding() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-stone-700">Comprehensive NEF framework scoring</span>
+                  <span className="text-stone-700">Comprehensive VentureReady framework scoring</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
