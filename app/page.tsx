@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { ArrowRight, FileText, TrendingUp, Target, Check, Menu, X, Briefcase } from 'lucide-react';
 
 export default function VentureReadyLanding() {
@@ -34,6 +35,7 @@ export default function VentureReadyLanding() {
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">Features</a>
+              <Link href="/samples" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">Samples</Link>
               <a href="#pricing" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">Pricing</a>
               <a href="#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">How It Works</a>
               <button 
@@ -57,6 +59,7 @@ export default function VentureReadyLanding() {
           {mobileMenuOpen && (
             <div className="md:hidden pt-4 pb-3 space-y-3 border-t border-stone-200 mt-4">
               <a href="#features" className="block text-stone-600 hover:text-stone-900 py-2">Features</a>
+              <Link href="/samples" className="block text-stone-600 hover:text-stone-900 py-2">Samples</Link>
               <a href="#pricing" className="block text-stone-600 hover:text-stone-900 py-2">Pricing</a>
               <a href="#how-it-works" className="block text-stone-600 hover:text-stone-900 py-2">How It Works</a>
               <button 
@@ -106,6 +109,17 @@ export default function VentureReadyLanding() {
                 >
                   See How It Works
                 </button>
+              </div>
+
+              {/* NEW: Sample Evaluations Link */}
+              <div className="pt-2">
+                <Link 
+                  href="/samples" 
+                  className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-semibold transition-colors group"
+                >
+                  <span>View sample evaluations</span>
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
 
               <div className="flex items-center space-x-8 pt-4">
@@ -264,6 +278,25 @@ export default function VentureReadyLanding() {
         </div>
       </section>
 
+      {/* NEW: Social Proof / Sample Evaluations Teaser Section */}
+      <section className="py-16 px-6 bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
+            See What Our Evaluations Look Like
+          </h2>
+          <p className="text-xl text-stone-600 mb-8 max-w-2xl mx-auto">
+            We provide detailed, actionable feedback—highlighting both strengths and areas for improvement
+          </p>
+          <Link 
+            href="/samples"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-bold text-lg hover:shadow-xl hover:scale-105 transition-all group"
+          >
+            <span>View Sample Evaluations</span>
+            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -411,6 +444,7 @@ export default function VentureReadyLanding() {
             <div>
               <h4 className="text-white font-semibold mb-4">Product</h4>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/samples" className="hover:text-white transition-colors">Sample Evaluations</Link></li>
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
                 <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
