@@ -19,13 +19,6 @@ export const metadata = {
   description: "Get expert feedback on your pitch deck, business plan, or executive summary with our AI-powered evaluation platform.",
 };
 
-export const metadata = {
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
