@@ -9,8 +9,8 @@ export default function Home() {
   const basicPrice = 97;
   const premiumPrice = 297;
 
-  const STRIPE_BASIC_LINK = "https://buy.stripe.com/5kQbJ3aVX4aa7imfRY3oA00";
-  const STRIPE_PREMIUM_LINK = "https://buy.stripe.com/5kQ5kFc01cGGdGK0X43oA01";
+  const STRIPE_BASIC_LINK = "https://buy.stripe.com/eVqdRb4xz4aabyCaxE3oA03";
+  const STRIPE_PREMIUM_LINK = "https://buy.stripe.com/14A4gB1ln8qqbyCeNU3oA04";
 
   return (
     <div className="min-h-screen bg-stone-50">
