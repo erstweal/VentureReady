@@ -9,9 +9,8 @@ export default function Home() {
   const basicPrice = 97;
   const premiumPrice = 297;
 
-  // Replace these with your real Stripe payment links
-  const STRIPE_BASIC_LINK = 'https://buy.stripe.com/your-basic-link';
-  const STRIPE_PREMIUM_LINK = 'https://buy.stripe.com/your-premium-link';
+  const STRIPE_BASIC_LINK = "https://buy.stripe.com/5kQbJ3aVX4aa7imfRY3oA00";
+  const STRIPE_PREMIUM_LINK = "https://buy.stripe.com/5kQ5kFc01cGGdGK0X43oA01";
 
   return (
     <div className="min-h-screen bg-stone-50">
