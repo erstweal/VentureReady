@@ -1,72 +1,20 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from 'next/link';
-import { Briefcase, Menu, X } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
 export default function SamplesPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-stone-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-lg flex items-center justify-center">
-                <Briefcase className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-stone-900">VentureReady</span>
-            </Link>
-            
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="/#features" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">Features</a>
-              <Link href="/samples" className="text-emerald-600 font-medium">Samples</Link>
-              <a href="/#pricing" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">Pricing</a>
-              <a href="/#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors font-medium">How It Works</a>
-              <button 
-                onClick={() => window.location.href = '/#pricing'}
-                className="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all"
-              >
-                Get Started
-              </button>
-            </div>
 
-            {/* Mobile Menu Button */}
-            <button 
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+      <Navbar />
 
-          {/* Mobile Menu */}
-          {mobileMenuOpen && (
-            <div className="md:hidden pt-4 pb-3 space-y-3 border-t border-stone-200 mt-4">
-              <a href="/#features" className="block text-stone-600 hover:text-stone-900 py-2">Features</a>
-              <Link href="/samples" className="block text-emerald-600 py-2">Samples</Link>
-              <a href="/#pricing" className="block text-stone-600 hover:text-stone-900 py-2">Pricing</a>
-              <a href="/#how-it-works" className="block text-stone-600 hover:text-stone-900 py-2">How It Works</a>
-              <button 
-                onClick={() => window.location.href = '/#pricing'}
-                className="w-full px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold"
-              >
-                Get Started
-              </button>
-            </div>
-          )}
-        </div>
-      </nav>
-
-      {/* Header */}
-      <div className="pt-32 pb-16 px-6 bg-emerald-600 text-white">
-        <div className="max-w-6xl mx-auto">
+      {/* Header — pushed down to clear the fixed navbar */}
+      <div className="bg-emerald-600 text-white py-16 mt-[73px]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sample Evaluations</h1>
           <p className="text-xl text-emerald-100 max-w-3xl">
-            See what VentureReady customers receive. These are actual excerpts from our comprehensive 
+            See what VentureReady customers receive. These are actual excerpts from our comprehensive
             pitch deck evaluations—showing both strengths and areas for improvement.
           </p>
         </div>
@@ -74,14 +22,14 @@ export default function SamplesPage() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
+
         {/* Introduction */}
         <div className="mb-12 bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-lg">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">What You Get</h2>
           <p className="text-gray-700 leading-relaxed">
-            Every VentureReady evaluation provides detailed, actionable feedback on your pitch materials. 
-            We don't just point out problems—we highlight what's working well and provide specific 
-            recommendations to make your pitch investor-ready. Below are selected excerpts showing the 
+            Every VentureReady evaluation provides detailed, actionable feedback on your pitch materials.
+            We don't just point out problems—we highlight what's working well and provide specific
+            recommendations to make your pitch investor-ready. Below are selected excerpts showing the
             depth and quality of analysis you can expect.
           </p>
         </div>
@@ -163,62 +111,48 @@ export default function SamplesPage() {
                   Immediate Fixes (Must Do)
                 </h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">1.</span>
-                    <span>Add proper Title Slide with CEO name, title, contact info</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">2.</span>
-                    <span>Create The Exit slide showing potential acquirers and comparable M&A</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">3.</span>
-                    <span>Build Competition slide with matrix comparing to 4-5 alternatives</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">4.</span>
-                    <span>Complete The Ask slide with use of funds breakdown and ARR target</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">5.</span>
-                    <span>Add product screenshots to Solution slide - show the actual product</span>
-                  </li>
+                  {[
+                    'Add proper Title Slide with CEO name, title, contact info',
+                    'Create The Exit slide showing potential acquirers and comparable M&A',
+                    'Build Competition slide with matrix comparing to 4-5 alternatives',
+                    'Complete The Ask slide with use of funds breakdown and ARR target',
+                    'Add product screenshots to Solution slide - show the actual product',
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-emerald-600 mr-2">{i + 1}.</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-bold text-yellow-600 text-lg mb-3 flex items-center">
                   <span className="bg-yellow-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-2">+</span>
                   Important Improvements
                 </h4>
                 <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">8.</span>
-                    <span>Show actual customer logos on traction slide (if possible)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">9.</span>
-                    <span>Add revenue metrics - ARR, MRR growth rate, or customer LTV</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">10.</span>
-                    <span>Include retention/churn data - proves product stickiness</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-emerald-600 mr-2">11.</span>
-                    <span>Explain contributor acquisition - how did you get 300 experts for free?</span>
-                  </li>
+                  {[
+                    'Show actual customer logos on traction slide (if possible)',
+                    'Add revenue metrics - ARR, MRR growth rate, or customer LTV',
+                    'Strengthen Go-To-Market with specific channel strategy and CAC estimates',
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-emerald-600 mr-2">{i + 8}.</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Sample 3: What Works / What's Missing */}
+        {/* Sample 3: Strengths vs Gaps */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
-            <h3 className="text-xl font-bold text-white">Sample 3: Balanced Assessment</h3>
-            <p className="text-emerald-100 text-sm">We highlight strengths AND gaps</p>
+            <h3 className="text-xl font-bold text-white">Sample 3: Strengths vs. Critical Gaps</h3>
+            <p className="text-emerald-100 text-sm">Balanced assessment of what's working and what's missing</p>
           </div>
           <div className="p-6">
             <div className="grid md:grid-cols-2 gap-6">
@@ -230,82 +164,60 @@ export default function SamplesPage() {
                   What Works
                 </h4>
                 <ul className="space-y-2 text-gray-700 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Problem is real, large, and well-articulated</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Solution is differentiated (GitHub analogy is brilliant)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Team is strong</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Early traction shows product-market fit</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Growth model is smart (viral loops)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-600 mr-2">✓</span>
-                    <span>Market size is compelling</span>
-                  </li>
+                  {[
+                    'Problem is real, large, and well-articulated',
+                    'Solution is differentiated (GitHub analogy is brilliant)',
+                    'Team is strong',
+                    'Early traction shows product-market fit',
+                    'Growth model is smart (viral loops)',
+                    'Market size is compelling',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start">
+                      <span className="text-green-600 mr-2">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              
+
               <div className="bg-red-50 p-5 rounded-lg border border-red-200">
                 <h4 className="font-bold text-red-800 text-lg mb-3 flex items-center">
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd"/>
                   </svg>
-                  What's Missing
+                  Critical Gaps
                 </h4>
                 <ul className="space-y-2 text-gray-700 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>Financial projections lack detail</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>No exit strategy shown</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>Competition not properly addressed</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>Product not visually demonstrated</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>Unit economics unclear</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-600 mr-2">✗</span>
-                    <span>Go-to-market specifics vague</span>
-                  </li>
+                  {[
+                    'No Ask slide — investors don\'t know what you want',
+                    'Financial projections need assumptions',
+                    'No Go-To-Market slide',
+                    'Team slide lacks headshots and bios',
+                    'Unit economics unclear',
+                    'Go-to-market specifics vague',
+                  ].map((item) => (
+                    <li key={item} className="flex items-start">
+                      <span className="text-red-600 mr-2">✗</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            
+
             <div className="mt-6 p-4 bg-gray-50 rounded-lg border-l-4 border-emerald-600">
               <p className="text-gray-700 font-semibold mb-2">Bottom Line:</p>
               <p className="text-gray-600 text-sm">
-                "This pitch would likely get a follow-up meeting based on market opportunity and team, 
-                but would not get a term sheet without addressing the financial and competitive gaps. 
-                The deck is 70% there - it tells a compelling story but lacks the analytical rigor and 
+                "This pitch would likely get a follow-up meeting based on market opportunity and team,
+                but would not get a term sheet without addressing the financial and competitive gaps.
+                The deck is 70% there — it tells a compelling story but lacks the analytical rigor and
                 completeness investors expect."
               </p>
             </div>
           </div>
         </div>
 
-        {/* Sample 4: Investor Questions Preview */}
+        {/* Sample 4: Investor Questions */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 4: Anticipated Investor Questions</h3>
@@ -316,46 +228,26 @@ export default function SamplesPage() {
               Likely Investor Questions This Deck Doesn't Answer:
             </p>
             <div className="space-y-3">
-              <div className="flex items-start p-3 bg-gray-50 rounded-lg">
-                <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">1</span>
-                <div>
-                  <p className="font-semibold text-gray-900">"How big is this market really?"</p>
-                  <p className="text-sm text-gray-600 mt-1">→ No market sizing</p>
+              {[
+                { q: '"How big is this market really?"', a: 'No market sizing' },
+                { q: '"Why should I care?"', a: 'No Hook to grab attention' },
+                { q: '"How does it work, and can competitors replicate it?"', a: 'No Technology/IP slide' },
+                { q: '"What will you do with my $10M?"', a: 'Use of funds too vague' },
+                { q: '"How will I get a 10x return?"', a: 'Exit strategy underdeveloped' },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start p-3 bg-gray-50 rounded-lg">
+                  <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">{i + 1}</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">{item.q}</p>
+                    <p className="text-sm text-gray-600 mt-1">→ {item.a}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start p-3 bg-gray-50 rounded-lg">
-                <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">2</span>
-                <div>
-                  <p className="font-semibold text-gray-900">"Why should I care?"</p>
-                  <p className="text-sm text-gray-600 mt-1">→ No Hook to grab attention</p>
-                </div>
-              </div>
-              <div className="flex items-start p-3 bg-gray-50 rounded-lg">
-                <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">3</span>
-                <div>
-                  <p className="font-semibold text-gray-900">"How does it work, and can competitors replicate it?"</p>
-                  <p className="text-sm text-gray-600 mt-1">→ No Technology/IP slide</p>
-                </div>
-              </div>
-              <div className="flex items-start p-3 bg-gray-50 rounded-lg">
-                <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">4</span>
-                <div>
-                  <p className="font-semibold text-gray-900">"What will you do with my $10M?"</p>
-                  <p className="text-sm text-gray-600 mt-1">→ Use of funds too vague</p>
-                </div>
-              </div>
-              <div className="flex items-start p-3 bg-gray-50 rounded-lg">
-                <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">5</span>
-                <div>
-                  <p className="font-semibold text-gray-900">"How will I get a 10x return?"</p>
-                  <p className="text-sm text-gray-600 mt-1">→ Exit strategy underdeveloped</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Sample 5: Implementation Timeline */}
+        {/* Sample 5: Actionable Roadmap */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 5: Actionable Roadmap</h3>
@@ -363,33 +255,18 @@ export default function SamplesPage() {
           </div>
           <div className="p-6">
             <div className="space-y-4">
-              <div className="border-l-4 border-emerald-600 pl-4 py-2">
-                <h4 className="font-bold text-gray-900 mb-2">Week 1:</h4>
-                <ul className="space-y-1 text-gray-700 text-sm">
-                  <li>• Build Market Size slide (research TAM/SAM, validate bottom-up)</li>
-                  <li>• Craft The Hook (identify best customer pain story)</li>
-                  <li>• Draft Technology/IP slide (product overview, defensibility)</li>
-                </ul>
-              </div>
-              
-              <div className="border-l-4 border-emerald-500 pl-4 py-2">
-                <h4 className="font-bold text-gray-900 mb-2">Week 2:</h4>
-                <ul className="space-y-1 text-gray-700 text-sm">
-                  <li>• Consolidate Traction/Milestones slide with future roadmap</li>
-                  <li>• Create detailed Use of Funds breakdown</li>
-                  <li>• Research comparable exits and build Exit slide</li>
-                </ul>
-              </div>
-              
-              <div className="border-l-4 border-emerald-400 pl-4 py-2">
-                <h4 className="font-bold text-gray-900 mb-2">Week 3:</h4>
-                <ul className="space-y-1 text-gray-700 text-sm">
-                  <li>• Extend financial model to 5 years</li>
-                  <li>• Add unit economics to Business Model slide</li>
-                  <li>• Polish and rehearse full presentation</li>
-                </ul>
-              </div>
-              
+              {[
+                { week: 'Week 1:', items: ['Build Market Size slide (research TAM/SAM, validate bottom-up)', 'Craft The Hook (identify best customer pain story)', 'Draft Technology/IP slide (product overview, defensibility)'] },
+                { week: 'Week 2:', items: ['Consolidate Traction/Milestones slide with future roadmap', 'Create detailed Use of Funds breakdown', 'Research comparable exits and build Exit slide'] },
+                { week: 'Week 3:', items: ['Extend financial model to 5 years', 'Add unit economics to Business Model slide', 'Polish and rehearse full presentation'] },
+              ].map((w) => (
+                <div key={w.week} className="border-l-4 border-emerald-600 pl-4 py-2">
+                  <h4 className="font-bold text-gray-900 mb-2">{w.week}</h4>
+                  <ul className="space-y-1 text-gray-700 text-sm">
+                    {w.items.map((item) => <li key={item}>• {item}</li>)}
+                  </ul>
+                </div>
+              ))}
               <div className="mt-4 p-4 bg-emerald-50 rounded-lg">
                 <p className="font-semibold text-emerald-900">Timeline to investor-ready: 2-3 weeks of focused work.</p>
               </div>
@@ -401,18 +278,18 @@ export default function SamplesPage() {
         <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Ready for Your Own Detailed Evaluation?</h2>
           <p className="text-xl text-emerald-100 mb-6 max-w-2xl mx-auto">
-            Get the same level of detailed, actionable feedback on your pitch deck, business plan, 
+            Get the same level of detailed, actionable feedback on your pitch deck, business plan,
             or executive summary.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link 
-              href="/#pricing" 
+            <Link
+              href="/#pricing"
               className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition-colors"
             >
-              Get Your Evaluation
+              Get Your Evaluation — $97
             </Link>
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-white border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-emerald-600 transition-colors"
             >
               Learn More
@@ -420,7 +297,7 @@ export default function SamplesPage() {
           </div>
         </div>
 
-        {/* Additional Context */}
+        {/* Disclaimer */}
         <div className="mt-12 text-center text-gray-600 text-sm">
           <p>All sample evaluations have been anonymized to protect client confidentiality.</p>
           <p className="mt-2">Actual evaluations may vary in length and detail based on the materials submitted.</p>

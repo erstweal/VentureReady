@@ -1,11 +1,9 @@
 'use client';
 
-import { useState } from 'react';
-import { Check, Menu, X } from 'lucide-react';
+import { Check } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const basicPrice = 97;
   const premiumPrice = 297;
 
@@ -15,57 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-stone-50">
 
-      {/* ── Nav ─────────────────────────────────────────────────────── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              {/* Logo */}
-              <img src="/logo-512.png" alt="VentureReady" className="w-9 h-9" />
-              <span className="text-xl font-bold text-stone-900">
-                VentureReady<span className="text-teal-500">.ai</span>
-              </span>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-stone-600 hover:text-stone-900 transition-colors">Features</a>
-              <a href="/samples" className="text-stone-600 hover:text-stone-900 transition-colors">Samples</a>
-              <a href="#pricing" className="text-stone-600 hover:text-stone-900 transition-colors">Pricing</a>
-              <a href="#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors">How It Works</a>
-            </div>
-
-            <div className="hidden md:flex items-center space-x-4">
-              <a
-                href="#pricing"
-                className="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-teal-800 transition-all"
-              >
-                Get Started
-              </a>
-            </div>
-
-            <button
-              className="md:hidden p-2 text-stone-600"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
-          {mobileMenuOpen && (
-            <div className="md:hidden pt-4 pb-3 space-y-3 border-t border-stone-200 mt-4">
-              <a href="#features" className="block text-stone-600 hover:text-stone-900 py-2">Features</a>
-              <a href="#pricing" className="block text-stone-600 hover:text-stone-900 py-2">Pricing</a>
-              <a href="#how-it-works" className="block text-stone-600 hover:text-stone-900 py-2">How It Works</a>
-              <a
-                href="#pricing"
-                className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold"
-              >
-                Get Started
-              </a>
-            </div>
-          )}
-        </div>
-      </nav>
+      <Navbar />
 
       {/* ── Hero ────────────────────────────────────────────────────── */}
       <section className="pt-32 pb-20 px-6">
