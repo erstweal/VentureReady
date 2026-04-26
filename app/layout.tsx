@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,6 +52,21 @@ export const metadata: Metadata = {
     apple: [{ url: "/logo-192.png", sizes: "192x192" }],
     shortcut: "/favicon.ico",
   },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <Analytics />   {/* ← add this line */}
+      </body>
+    </html>
+  );
 };
 
 export default function RootLayout({
