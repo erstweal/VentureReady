@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you-basic
+Disallow: /thank-you-premium
+Disallow: /api/
+
+Sitemap: https://ventureready.ai/sitemap.xml
