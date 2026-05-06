@@ -1,0 +1,25 @@
+# VentureReady.ai
+
+VentureReady.ai is an AI-powered pitch deck evaluation service for startup founders.
+
+## What We Do
+
+We provide institutional-quality pitch deck feedback in 24 hours or less. Founders upload their pitch deck (PDF, PPTX, or DOCX) and receive a detailed analysis scored against the proven 15-slide investor framework used by top venture capitalists.
+
+## Our Services
+
+- **Basic Evaluation ($97):** Slide-by-slide scoring, red flag detection, and an actionable improvement plan delivered within 24 hours.
+- **Premium Evaluation ($197):** Everything in Basic plus a personalized video walkthrough, investor Q&A prep guide, and 30-day email support.
+- **Enterprise:** Custom packages for accelerators, incubators, and VC firms evaluating multiple startups.
+
+## Who We Help
+
+Early-stage startup founders preparing for investor meetings, accelerator applications (YC, Techstars, etc.), or fundraising rounds.
+
+## Key Value Proposition
+
+Founders get honest, data-driven feedback calibrated to what institutional investors actually look for — without waiting weeks for a mentor meeting or paying thousands for a pitch coach.
+
+## Contact
+
+Website: https://ventureready.ai
