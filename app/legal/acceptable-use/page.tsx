@@ -89,8 +89,8 @@ export default function AcceptableUsePage() {
         <h3 className="text-base font-semibold text-stone-200 mb-3">Reporting Violations</h3>
         <p className="text-stone-400 leading-relaxed mb-3">
           To report violations, email{" "}
-          <a href="mailto:abuse@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-            abuse@ventureready.ai
+          <a href="mailto:support@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+            support@ventureready.ai
           </a>{" "}
           with:
         </p>
@@ -211,8 +211,8 @@ export default function AcceptableUsePage() {
           </p>
           <p>
             Abuse reports:{" "}
-            <a href="mailto:abuse@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-              abuse@ventureready.ai
+            <a href="mailto:support@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+              support@ventureready.ai
             </a>
           </p>
         </div>
