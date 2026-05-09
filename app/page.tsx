@@ -162,6 +162,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Testimonials ────────────────────────────────────────────── */}
+      <section className="py-20 px-6 bg-stone-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-stone-900 mb-4">What Founders Are Saying</h2>
+            <p className="text-xl text-stone-600">Real feedback from founders who used VentureReady on their pitch materials</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "I found it very insightful. I've used similar services before with mixed results — this one stood out.",
+                name: 'R.',
+                context: 'B2B SaaS Founder',
+              },
+              {
+                quote: "The analysis tool is incredible. It nailed the assessment on our exit strategy and CTO gaps.",
+                name: 'J.',
+                context: 'Marketplace Founder',
+              },
+              {
+                quote: "Incredibly valuable. I had my whole team file the reports — we keep coming back to them.",
+                name: 'D.',
+                context: 'Startup Founder',
+              },
+              {
+                quote: "Wow that AI audit is cool!",
+                name: 'J.',
+                context: 'PropTech Founder',
+              },
+            ].map((t, i) => (
+              <div key={i} className="bg-white rounded-2xl p-7 border border-stone-100 shadow-sm flex flex-col gap-4">
+                <div className="text-3xl text-emerald-300 font-serif leading-none">&ldquo;</div>
+                <p className="text-stone-700 leading-relaxed flex-1">{t.quote}</p>
+                <div>
+                  <div className="font-semibold text-stone-900">{t.name}</div>
+                  <div className="text-sm text-stone-500">{t.context}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Samples CTA ─────────────────────────────────────────────── */}
       <section className="py-16 px-6 bg-emerald-50 border-y border-emerald-100">
         <div className="max-w-4xl mx-auto text-center">
