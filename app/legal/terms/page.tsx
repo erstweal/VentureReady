@@ -140,11 +140,13 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-stone-200 mb-3">Refund Policy</h3>
         <p className="text-stone-400 leading-relaxed mb-6">
-          Please contact{" "}
+          We offer a 10-day money-back guarantee if your evaluation has not yet been started.
+          Once your evaluation is underway or delivered, no refund will be issued. To request a
+          refund, contact{" "}
           <a href="mailto:support@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
             support@ventureready.ai
           </a>{" "}
-          for refund requests. Refunds are evaluated on a case-by-case basis.
+          within 10 days of purchase.
         </p>
 
         <h3 className="text-base font-semibold text-stone-200 mb-3">Cancellation</h3>
@@ -238,7 +240,7 @@ export default function TermsPage() {
       <section className="mb-10">
         <h2 className="text-xl font-semibold text-white mb-4">Dispute Resolution</h2>
         <p className="text-stone-400 leading-relaxed">
-          These Terms are governed by the laws of [Your Jurisdiction]. Please contact us at{" "}
+          These Terms are governed by the laws of the State of Michigan, without regard to its conflict of law provisions. Please contact us at{" "}
           <a href="mailto:legal@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
             legal@ventureready.ai
           </a>{" "}
