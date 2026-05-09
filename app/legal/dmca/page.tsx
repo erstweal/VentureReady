@@ -46,7 +46,7 @@ export default function DmcaPage() {
           <div className="text-stone-400 text-sm space-y-1">
             <p>VentureReady</p>
             <p>Attn: DMCA Copyright Agent</p>
-            <p>[Business Address]</p>
+            <p>PO Box 530031, Livonia, MI 48153-0031</p>
             <p>
               Email:{" "}
               <a href="mailto:dmca@ventureready.ai" className="text-emerald-400 hover:text-emerald-300 transition-colors">
