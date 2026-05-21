@@ -89,7 +89,7 @@ export default function BlogIndex() {
           
             href="/#pricing"
             className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-800 transition-all shadow-lg shadow-emerald-200"
-          >
+          
             See Pricing
           </a>
         </div>
