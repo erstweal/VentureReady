@@ -1,4 +1,4 @@
-﻿ï»¿Ã¯Â»Â¿import { getPostBySlug, getAllPostSlugs } from '@/lib/posts';
+import { getPostBySlug, getAllPostSlugs } from '@/lib/posts';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const post = await getPostBySlug(slug);
     return {
-      title: `${post.title} ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â VentureReady.ai`,
+      title: `${post.title} -- VentureReady.ai`,
       description: post.excerpt,
       alternates: { canonical: `/blog/${slug}` },
       openGraph: {
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     };
   } catch {
-    return { title: 'Post Not Found ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â VentureReady.ai' };
+    return { title: 'Post Not Found -- VentureReady.ai' };
   }
 }
 
@@ -54,20 +54,19 @@ export default async function BlogPost({ params }: Props) {
     <div className="min-h-screen bg-stone-50">
       <Navbar />
 
-      {/* Article Header */}
       <section className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
         <div className="max-w-3xl mx-auto">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm"
           >
-            Ã¢" Â Back to Blog
+            Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sm text-stone-500">{formattedDate}</span>
             {post.author && (
               <>
-                <span className="text-stone-300">Ã‚Â·</span>
+                <span className="text-stone-300">·</span>
                 <span className="text-sm text-stone-500">{post.author}</span>
               </>
             )}
@@ -79,58 +78,39 @@ export default async function BlogPost({ params }: Props) {
         </div>
       </section>
 
-      {/* Article Body */}
       <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto">
           <div
-            className="prose prose-stone prose-lg max-w-none
-              prose-headings:font-bold prose-headings:text-stone-900
-              prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4
-              prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-              prose-p:text-stone-700 prose-p:leading-relaxed
-              prose-strong:text-stone-900
-              prose-ul:text-stone-700 prose-li:marker:text-emerald-500
-              prose-a:text-emerald-700 prose-a:font-semibold hover:prose-a:text-emerald-900
-              prose-hr:border-stone-200"
+            className="prose prose-stone prose-lg max-w-none prose-headings:font-bold prose-headings:text-stone-900 prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-stone-700 prose-p:leading-relaxed prose-strong:text-stone-900 prose-ul:text-stone-700 prose-a:text-emerald-700 prose-a:font-semibold prose-hr:border-stone-200"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 px-6 bg-gradient-to-br from-emerald-600 to-teal-700">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Find Out Where Your Deck Stands?
           </h2>
           <p className="text-lg text-emerald-50 mb-8 max-w-xl mx-auto">
-            Get slide-by-slide feedback against the VentureReady 15-slide investor framework ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â delivered in 24 hours.
+            Get slide-by-slide feedback against the VentureReady 15-slide investor framework -- delivered in 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/#pricing"
-              className="px-8 py-4 bg-white text-emerald-700 rounded-xl font-bold text-lg hover:bg-stone-50 transition-colors shadow-lg"
-            >
+            <a href="/#pricing" className="px-8 py-4 bg-white text-emerald-700 rounded-xl font-bold text-lg hover:bg-stone-50 transition-colors shadow-lg">
               See Pricing
             </a>
-            <a
-              href="/samples"
-              className="px-8 py-4 bg-emerald-700 text-white rounded-xl font-bold text-lg border-2 border-emerald-400 hover:bg-emerald-800 transition-colors"
-            >
+            <a href="/samples" className="px-8 py-4 bg-emerald-700 text-white rounded-xl font-bold text-lg border-2 border-emerald-400 hover:bg-emerald-800 transition-colors">
               View Sample Reports
             </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-stone-900 text-stone-400 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <img src="/logo-512.png" alt="VentureReady" className="w-7 h-7" />
-            <span className="text-white font-bold">
-              VentureReady<span className="text-teal-400">.ai</span>
-            </span>
+            <span className="text-white font-bold">VentureReady<span className="text-teal-400">.ai</span></span>
           </div>
           <div className="flex gap-6 text-sm">
             <a href="/" className="hover:text-white transition-colors">Home</a>
