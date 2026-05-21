@@ -1,14 +1,14 @@
-﻿import { getAllPosts } from '@/lib/posts';
+import { getAllPosts } from '@/lib/posts';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog â€” VentureReady.ai',
+  title: 'Blog -- VentureReady.ai',
   description: 'Pitch deck strategy, fundraising tips, and investor insights for early-stage founders.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Blog â€” VentureReady.ai',
+    title: 'Blog -- VentureReady.ai',
     description: 'Pitch deck strategy, fundraising tips, and investor insights for early-stage founders.',
     url: 'https://ventureready.ai/blog',
     siteName: 'VentureReady.ai',
@@ -23,7 +23,6 @@ export default function BlogIndex() {
     <div className="min-h-screen bg-stone-50">
       <Navbar />
 
-      {/* Header */}
       <section className="pt-32 pb-16 px-6 bg-white border-b border-stone-100">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-4 py-1.5 bg-emerald-100 border border-emerald-200 rounded-full mb-6">
@@ -33,16 +32,15 @@ export default function BlogIndex() {
             The VentureReady Blog
           </h1>
           <p className="text-xl text-stone-600 max-w-2xl mx-auto">
-            Pitch deck strategy, fundraising insights, and investor frameworks â€” written for founders who are serious about raising capital.
+            Pitch deck strategy, fundraising insights, and investor frameworks -- written for founders who are serious about raising capital.
           </p>
         </div>
       </section>
 
-      {/* Posts */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           {posts.length === 0 ? (
-            <p className="text-center text-stone-500 py-20">No posts yet â€” check back soon.</p>
+            <p className="text-center text-stone-500 py-20">No posts yet -- check back soon.</p>
           ) : (
             <div className="space-y-8">
               {posts.map((post) => (
@@ -60,7 +58,7 @@ export default function BlogIndex() {
                     </span>
                     {post.author && (
                       <>
-                        <span className="text-stone-300">Â·</span>
+                        <span className="text-stone-300">·</span>
                         <span className="text-sm text-stone-500">{post.author}</span>
                       </>
                     )}
@@ -73,7 +71,7 @@ export default function BlogIndex() {
                     href={`/blog/${post.slug}`}
                     className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors"
                   >
-                    Read more â†’
+                    Read more
                   </Link>
                 </article>
               ))}
@@ -82,23 +80,21 @@ export default function BlogIndex() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 px-6 bg-emerald-50 border-t border-emerald-100">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-stone-900 mb-4">Ready to Evaluate Your Deck?</h2>
           <p className="text-lg text-stone-600 mb-8">
-            Get slide-by-slide feedback against the investor framework â€” delivered in 24 hours.
+            Get slide-by-slide feedback against the investor framework -- delivered in 24 hours.
           </p>
-          <a
+          
             href="/#pricing"
             className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-800 transition-all shadow-lg shadow-emerald-200"
           >
-            See Pricing â†’
+            See Pricing
           </a>
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-stone-900 text-stone-400 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
@@ -114,7 +110,7 @@ export default function BlogIndex() {
             <a href="/legal/privacy" className="hover:text-white transition-colors">Privacy</a>
             <a href="/legal/terms" className="hover:text-white transition-colors">Terms</a>
           </div>
-          <p className="text-sm">&copy; 2026 VentureReady. All rights reserved.</p>
+          <p className="text-sm">2026 VentureReady. All rights reserved.</p>
         </div>
       </footer>
     </div>
