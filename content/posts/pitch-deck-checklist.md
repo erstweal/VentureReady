@@ -1,7 +1,7 @@
 ---
 title: "The 5-Minute Pitch Deck Self-Check Every Founder Should Do Before Sending"
 date: "2026-05-15"
-excerpt: "A quick five-minute review covering the most common gaps that cause pitch decks to get passed on -- before you hit send."
+excerpt: "A quick five-minute review covering the most common gaps that cause pitch decks to get passed on - before you hit send."
 author: "VentureReady.ai"
 ---
 
@@ -26,7 +26,7 @@ Investors see hundreds of decks. If your opening slide doesn't immediately commu
 
 ## 3. Do your financial projections show the math?
 
-Revenue projections without assumptions aren't projections -- they're wishes. Your numbers need to connect to real inputs: number of customers, average contract value, conversion rate, headcount.
+Revenue projections without assumptions aren't projections - they're wishes. Your numbers need to connect to real inputs: number of customers, average contract value, conversion rate, headcount.
 
 If you can't show the math, investors won't believe the output. Worse, they'll wonder what else in the deck isn't backed up.
 
@@ -44,7 +44,7 @@ Vague GTM is one of the most common reasons investors pass on otherwise strong d
 
 Investors move through a deck asking silent questions: Is the problem real? Is the market big enough? Can this team execute? How do I make money?
 
-Read through your deck and ask whether each slide answers a question an investor would actually have -- or whether it's there because it felt important to you as a founder. If you can't identify the investor question a slide answers, cut it or reframe it.
+Read through your deck and ask whether each slide answers a question an investor would actually have - or whether it's there because it felt important to you as a founder. If you can't identify the investor question a slide answers, cut it or reframe it.
 
 ---
 

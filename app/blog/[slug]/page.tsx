@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const post = await getPostBySlug(slug);
     return {
-      title: `${post.title} -- VentureReady.ai`,
+      title: `${post.title} - VentureReady.ai`,
       description: post.excerpt,
       alternates: { canonical: `/blog/${slug}` },
       openGraph: {
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     };
   } catch {
-    return { title: 'Post Not Found -- VentureReady.ai' };
+    return { title: 'Post Not Found - VentureReady.ai' };
   }
 }
 
@@ -56,10 +56,7 @@ export default async function BlogPost({ params }: Props) {
 
       <section className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
         <div className="max-w-3xl mx-auto">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm"
-          >
+          <Link href="/blog" className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm">
             Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-6">
@@ -71,9 +68,7 @@ export default async function BlogPost({ params }: Props) {
               </>
             )}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 leading-tight mb-6">
-            {post.title}
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 leading-tight mb-6">{post.title}</h1>
           <p className="text-xl text-stone-600 leading-relaxed">{post.excerpt}</p>
         </div>
       </section>
@@ -89,11 +84,9 @@ export default async function BlogPost({ params }: Props) {
 
       <section className="py-16 px-6 bg-gradient-to-br from-emerald-600 to-teal-700">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Find Out Where Your Deck Stands?
-          </h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Find Out Where Your Deck Stands?</h2>
           <p className="text-lg text-emerald-50 mb-8 max-w-xl mx-auto">
-            Get slide-by-slide feedback against the VentureReady 15-slide investor framework -- delivered in 24 hours.
+            Get slide-by-slide feedback against the VentureReady 15-slide investor framework - delivered in 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/#pricing" className="px-8 py-4 bg-white text-emerald-700 rounded-xl font-bold text-lg hover:bg-stone-50 transition-colors shadow-lg">
