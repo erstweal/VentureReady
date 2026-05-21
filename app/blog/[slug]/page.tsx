@@ -1,4 +1,4 @@
-﻿import { getPostBySlug, getAllPostSlugs } from '@/lib/posts';
+﻿ï»¿Ã¯Â»Â¿import { getPostBySlug, getAllPostSlugs } from '@/lib/posts';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const post = await getPostBySlug(slug);
     return {
-      title: `${post.title} â€” VentureReady.ai`,
+      title: `${post.title} ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â VentureReady.ai`,
       description: post.excerpt,
       alternates: { canonical: `/blog/${slug}` },
       openGraph: {
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     };
   } catch {
-    return { title: 'Post Not Found â€” VentureReady.ai' };
+    return { title: 'Post Not Found ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â VentureReady.ai' };
   }
 }
 
@@ -61,13 +61,13 @@ export default async function BlogPost({ params }: Props) {
             href="/blog"
             className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm"
           >
-            ← Back to Blog
+            Ã¢" Â Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-6">
             <span className="text-sm text-stone-500">{formattedDate}</span>
             {post.author && (
               <>
-                <span className="text-stone-300">·</span>
+                <span className="text-stone-300">Ã‚Â·</span>
                 <span className="text-sm text-stone-500">{post.author}</span>
               </>
             )}
@@ -104,7 +104,7 @@ export default async function BlogPost({ params }: Props) {
             Ready to Find Out Where Your Deck Stands?
           </h2>
           <p className="text-lg text-emerald-50 mb-8 max-w-xl mx-auto">
-            Get slide-by-slide feedback against the VentureReady 15-slide investor framework â€” delivered in 24 hours.
+            Get slide-by-slide feedback against the VentureReady 15-slide investor framework ÃƒÂ¢Ã¢"šÂ¬Ã¢â‚¬Â delivered in 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

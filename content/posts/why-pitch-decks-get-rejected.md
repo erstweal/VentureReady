@@ -1,13 +1,13 @@
-﻿---
+﻿ï»¿Ã¯Â»Â¿ÃƒÂ¯Ã‚Â»Ã‚Â¿---
 title: "Why Most Pitch Decks Get Rejected Before Slide 10 (And How to Fix It)"
 date: "2026-05-20"
 excerpt: "After evaluating hundreds of pitch decks, we see the same three gaps killing otherwise fundable companies. Here's what they are and how to fix them."
 author: "VentureReady.ai"
 ---
 
-You spent weeks building your pitch deck. The product is real. The market opportunity is massive. The team is strong. And yet â€” silence. No follow-up meeting. No term sheet. Just a polite pass and a vague "not the right fit for us right now."
+You spent weeks building your pitch deck. The product is real. The market opportunity is massive. The team is strong. And yet ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â silence. No follow-up meeting. No term sheet. Just a polite pass and a vague "not the right fit for us right now."
 
-Here's the uncomfortable truth: most pitch decks don't get rejected because the business is bad. They get rejected because the deck fails to answer the questions investors are silently asking â€” often before you even reach the halfway point.
+Here's the uncomfortable truth: most pitch decks don't get rejected because the business is bad. They get rejected because the deck fails to answer the questions investors are silently asking ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â often before you even reach the halfway point.
 
 After evaluating hundreds of pitch decks across medtech, SaaS, cleantech, PropTech, consumer, and hardware, we see the same gaps over and over. Three of them account for the majority of rejections from otherwise fundable companies.
 
@@ -15,7 +15,7 @@ After evaluating hundreds of pitch decks across medtech, SaaS, cleantech, PropTe
 
 ### 1. The Ask Slide Is Missing (or Buried)
 
-This is the single most common â€” and most damaging â€” omission we see. Founders build a compelling story about the problem, the solution, the market, the team. And then the deck just... ends.
+This is the single most common ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â and most damaging ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â omission we see. Founders build a compelling story about the problem, the solution, the market, the team. And then the deck just... ends.
 
 No Ask slide. No raise amount. No use of funds.
 
@@ -37,7 +37,7 @@ Founders either skip financials entirely ("we're pre-revenue, so we don't have p
 
 If you skip financials entirely, you signal that you haven't thought rigorously about unit economics, customer acquisition cost, or the path to profitability. Every investor is trying to model whether they can get a 10x return. You've just made that impossible.
 
-If you present projections without assumptions, investors won't believe the numbers â€” and they'll wonder what else in the deck is unsupported. "We'll reach $50M ARR by Year 3" means nothing without explaining how many customers that requires, at what price point, through what channels, at what acquisition cost.
+If you present projections without assumptions, investors won't believe the numbers ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â and they'll wonder what else in the deck is unsupported. "We'll reach $50M ARR by Year 3" means nothing without explaining how many customers that requires, at what price point, through what channels, at what acquisition cost.
 
 **What good financial projections look like:**
 
@@ -56,12 +56,12 @@ We see this constantly. It's the pitch deck equivalent of "we'll figure it out."
 
 Your Go-To-Market (GTM) slide answers one critical question: *How will you find, contact, and close customers at a cost that makes economic sense?*
 
-Vague answers here are a red flag because they suggest the founder is product-focused but not commercially oriented â€” a very common early-stage failure mode.
+Vague answers here are a red flag because they suggest the founder is product-focused but not commercially oriented ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â a very common early-stage failure mode.
 
 **What investors want to see in a GTM slide:**
 
 - **Channels**: Specific channels (outbound sales, partnerships, content/SEO, paid acquisition, events) with reasoning for why these channels reach your buyer
-- **ICP**: Ideal Customer Profile â€” who exactly is your first customer, and why them first?
+- **ICP**: Ideal Customer Profile ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â who exactly is your first customer, and why them first?
 - **Sales motion**: Is this a self-serve product, a transactional sale, or an enterprise deal? What's the cycle length?
 - **CAC estimate**: Even a rough estimate shows you've thought about acquisition economics
 - **Beachhead market**: What's the specific segment you're winning first before expanding?
@@ -72,17 +72,17 @@ The best GTM slides tell investors: "Here's exactly who we're selling to, here's
 
 What's striking about these three gaps is what they have in common: they're all **commercial** slides, not product slides.
 
-Most founders are deeply comfortable talking about what they're building. They're less comfortable â€” or less practiced â€” at articulating the business mechanics: how much money they need, how they'll make money, and how they'll find customers.
+Most founders are deeply comfortable talking about what they're building. They're less comfortable ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â or less practiced ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â at articulating the business mechanics: how much money they need, how they'll make money, and how they'll find customers.
 
 Investors, almost by definition, are evaluating the business mechanics. They're not buying a product. They're buying a future outcome.
 
-When your deck has a great Problem slide, a great Solution slide, and a great Team slide â€” but is missing the Ask, the Financials, and the GTM â€” what investors hear is: *this founder hasn't fully made the mental transition from builder to CEO.*
+When your deck has a great Problem slide, a great Solution slide, and a great Team slide ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â but is missing the Ask, the Financials, and the GTM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â what investors hear is: *this founder hasn't fully made the mental transition from builder to CEO.*
 
 ## How to Know Where Your Deck Stands
 
-The fastest way to find out which of these gaps your deck has is to have it evaluated against a structured investor framework â€” the same kind top-tier investors use to screen deals.
+The fastest way to find out which of these gaps your deck has is to have it evaluated against a structured investor framework ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â the same kind top-tier investors use to screen deals.
 
-At VentureReady.ai, we evaluate every pitch deck against our 15-slide investor framework, identifying exactly which slides are investor-ready, which need strengthening, and which are missing entirely. You get a detailed, prioritized report within 24 hours â€” the same quality of feedback that used to require a $500/hour consultant.
+At VentureReady.ai, we evaluate every pitch deck against our 15-slide investor framework, identifying exactly which slides are investor-ready, which need strengthening, and which are missing entirely. You get a detailed, prioritized report within 24 hours ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢"šÂ¬Ã‚Â the same quality of feedback that used to require a $500/hour consultant.
 
 If you're preparing to fundraise, the single best investment you can make is knowing where your deck is weak before you're in the room with investors.
 
