@@ -24,9 +24,12 @@ export default function Home() {
                 <span className="text-sm font-semibold text-emerald-900">AI-Powered Business Evaluation</span>
               </div>
 
-              <h1 className="text-5xl lg:text-6xl font-bold text-stone-900 leading-tight tracking-tight">
-                Get Your Business
-                <span className="block mt-2 bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
+              <h1
+                className="text-5xl lg:text-6xl font-bold text-stone-900 leading-tight tracking-tight"
+                aria-label="AI-Powered Pitch Deck Evaluation for Startup Founders"
+              >
+                <span aria-hidden="true">Get Your Business</span>
+                <span aria-hidden="true" className="block mt-2 bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
                   Venture Ready
                 </span>
               </h1>
