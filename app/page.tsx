@@ -10,8 +10,83 @@ export default function Home() {
   const STRIPE_BASIC_LINK = "https://buy.stripe.com/eVqdRb4xz4aabyCaxE3oA03";
   const STRIPE_PREMIUM_LINK = "https://buy.stripe.com/14A4gB1ln8qqbyCeNU3oA04";
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is a pitch deck evaluation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "A pitch deck evaluation is a structured review of your startup's pitch materials scored against the investor frameworks used by top VCs. You receive slide-by-slide feedback, a red-flag report, and a prioritized action plan — so you know exactly what to fix before you're in the room with investors.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the 15-slide investor framework?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The 15-slide framework is the standard pitch deck structure top-tier VCs use to evaluate startups. It covers: Title, Problem, Solution, Why Now, Market Size, Business Model, Traction, Go-to-Market, Competition, Team, Financials, Ask, Use of Funds, Roadmap, and Appendix. Our AI scores your deck against every section and flags what\'s missing or weak.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does the evaluation take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Most evaluations are delivered within 24 hours of submission. Orders placed during business hours are often returned the same day.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What file formats do you accept?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We accept PDF, PowerPoint (.pptx), and Word (.docx) files up to 50MB. PDF is recommended since it\'s the format most investors request.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is VentureReady different from hiring a pitch coach?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A pitch coach typically costs $300–$1,000/hour and takes weeks to schedule. VentureReady delivers the same depth of structured, investor-framework-based analysis in 24 hours for $97 — making it accessible to founders at any stage, not just those with large budgets.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "I'm pre-revenue. Is this still useful?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes — many of our users are pre-revenue or pre-product. The evaluation adapts to your stage, flagging what investors need to see at the early stage and what assumptions need to be validated before you start fundraising.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is my pitch deck kept confidential?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely. Your materials are never shared with third parties. Your intellectual property, business information, and competitive strategy remain entirely yours.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will this guarantee I get funded?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "No evaluation can guarantee funding — investor decisions depend on many factors beyond the deck. What VentureReady does guarantee: you'll know exactly where your deck is strong, where it's weak, and how to improve it before investors see it.",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
 
       <Navbar />
 
@@ -343,6 +418,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FAQ ─────────────────────────────────────────────────────── */}
+      <section id="faq" className="py-20 px-6 bg-stone-50">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-stone-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-stone-600">Everything founders ask before submitting their pitch deck</p>
+          </div>
+          <div className="space-y-5">
+            {[
+              {
+                q: 'What is a pitch deck evaluation?',
+                a: 'A pitch deck evaluation is a structured review of your startup\'s pitch materials scored against the investor frameworks used by top VCs. You receive slide-by-slide feedback, a red-flag report, and a prioritized action plan — so you know exactly what to fix before you\'re in the room with investors.',
+              },
+              {
+                q: 'What is the 15-slide investor framework?',
+                a: 'The 15-slide framework is the standard pitch deck structure top-tier VCs use to evaluate startups. It covers: Title, Problem, Solution, Why Now, Market Size, Business Model, Traction, Go-to-Market, Competition, Team, Financials, Ask, Use of Funds, Roadmap, and Appendix. Our AI scores your deck against every section and flags what\'s missing or weak.',
+              },
+              {
+                q: 'How long does the evaluation take?',
+                a: 'Most evaluations are delivered within 24 hours of submission. Orders placed during business hours are often returned the same day.',
+              },
+              {
+                q: 'What file formats do you accept?',
+                a: 'We accept PDF, PowerPoint (.pptx), and Word (.docx) files up to 50MB. PDF is recommended since it\'s the format most investors request.',
+              },
+              {
+                q: 'How is VentureReady different from hiring a pitch coach?',
+                a: 'A pitch coach typically costs $300–$1,000/hour and takes weeks to schedule. VentureReady delivers the same depth of structured, investor-framework-based analysis in 24 hours for $97 — making it accessible to founders at any stage, not just those with large budgets.',
+              },
+              {
+                q: 'I\'m pre-revenue. Is this still useful?',
+                a: 'Yes — many of our users are pre-revenue or pre-product. The evaluation adapts to your stage, flagging what investors need to see at the early stage and what assumptions need to be validated before you start fundraising.',
+              },
+              {
+                q: 'Is my pitch deck kept confidential?',
+                a: 'Absolutely. Your materials are never shared with third parties. Your intellectual property, business information, and competitive strategy remain entirely yours.',
+              },
+              {
+                q: 'Will this guarantee I get funded?',
+                a: 'No evaluation can guarantee funding — investor decisions depend on many factors beyond the deck. What VentureReady does guarantee: you\'ll know exactly where your deck is strong, where it\'s weak, and how to improve it before investors see it.',
+              },
+            ].map((item) => (
+              <div key={item.q} className="bg-white rounded-2xl p-7 border border-stone-100 shadow-sm">
+                <h3 className="text-lg font-bold text-stone-900 mb-3">{item.q}</h3>
+                <p className="text-stone-600 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Final CTA ───────────────────────────────────────────────── */}
       <section className="py-20 px-6 bg-gradient-to-br from-emerald-600 to-teal-700">
         <div className="max-w-4xl mx-auto text-center">
@@ -383,6 +509,7 @@ export default function Home() {
                 <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
                 <li><a href="#how-it-works" className="hover:text-white transition-colors">How It Works</a></li>
+                <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
             </div>
             <div>

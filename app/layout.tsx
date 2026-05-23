@@ -29,6 +29,18 @@ export const metadata: Metadata = {
     "AI pitch deck analysis",
     "venture capital pitch",
     "startup fundraising",
+    "pitch deck template",
+    "15-slide pitch deck",
+    "how to make a pitch deck",
+    "pitch deck checklist",
+    "startup pitch deck review",
+    "pitch deck consultant",
+    "investor pitch deck analysis",
+    "fundraising pitch deck",
+    "pitch deck scoring",
+    "YC application pitch deck",
+    "seed round pitch deck",
+    "Series A pitch deck",
   ],
   alternates: {
     canonical: "/",
@@ -104,32 +116,47 @@ const jsonLd = {
       "@type": "Service",
       "@id": "https://ventureready.ai/#service",
       name: "AI Pitch Deck Evaluation",
+      serviceType: "Pitch Deck Review",
       provider: { "@id": "https://ventureready.ai/#organization" },
       url: "https://ventureready.ai",
       description:
         "Slide-by-slide pitch deck scoring, red flag detection, and an actionable improvement plan — evaluated against the 15-slide investor framework used by top VCs. Delivered in 24 hours.",
+      areaServed: "Worldwide",
+      availableChannel: {
+        "@type": "ServiceChannel",
+        serviceUrl: "https://ventureready.ai",
+        serviceType: "Online",
+      },
       audience: {
         "@type": "Audience",
-        audienceType: "Startup founders, entrepreneurs seeking venture capital funding",
+        audienceType: "Startup founders and entrepreneurs seeking venture capital or angel investment funding",
       },
-      offers: [
-        {
-          "@type": "Offer",
-          name: "Basic Evaluation",
-          price: "97",
-          priceCurrency: "USD",
-          description:
-            "Slide-by-slide scoring, red flag detection, and actionable improvement plan delivered within 24 hours.",
-        },
-        {
-          "@type": "Offer",
-          name: "Premium Evaluation",
-          price: "197",
-          priceCurrency: "USD",
-          description:
-            "Everything in Basic plus a personalized video walkthrough, investor Q&A prep guide, and 30-day email support.",
-        },
-      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Pitch Deck Evaluation Plans",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            "@id": "https://ventureready.ai/#offer-basic",
+            name: "Basic Evaluation",
+            price: "97",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            description:
+              "Slide-by-slide scoring, red flag detection (P1–P3 severity), KEEP/STRENGTHEN/ADD verdicts per slide, and an actionable improvement plan delivered within 24 hours as a PDF report.",
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://ventureready.ai/#offer-premium",
+            name: "Premium Subscription",
+            price: "297",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            description:
+              "5 evaluations per month, multiple document types, competitive comparison grid, recommended 15-slide storyline arc, priority support, and progress tracking.",
+          },
+        ],
+      },
     },
   ],
 };

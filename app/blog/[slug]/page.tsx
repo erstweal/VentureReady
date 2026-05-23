@@ -27,6 +27,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         siteName: 'VentureReady.ai',
         type: 'article',
         publishedTime: post.date,
+        modifiedTime: post.date,
+        authors: ['VentureReady.ai'],
+        tags: ['pitch deck', 'startup fundraising', 'venture capital', 'investor framework'],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.title,
+        description: post.excerpt,
       },
     };
   } catch {
@@ -50,8 +58,57 @@ export default async function BlogPost({ params }: Props) {
     day: 'numeric',
   });
 
+  const articleUrl = `https://ventureready.ai/blog/${slug}`;
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': `${articleUrl}#article`,
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        dateModified: post.date,
+        url: articleUrl,
+        author: {
+          '@type': 'Organization',
+          '@id': 'https://ventureready.ai/#organization',
+          name: 'VentureReady.ai',
+          url: 'https://ventureready.ai',
+        },
+        publisher: {
+          '@type': 'Organization',
+          '@id': 'https://ventureready.ai/#organization',
+          name: 'VentureReady.ai',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://ventureready.ai/logo-512.png',
+          },
+        },
+        isPartOf: { '@id': 'https://ventureready.ai/#website' },
+        about: {
+          '@type': 'Thing',
+          name: 'Pitch Deck Evaluation',
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://ventureready.ai' },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://ventureready.ai/blog' },
+          { '@type': 'ListItem', position: 3, name: post.title, item: articleUrl },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-stone-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <Navbar />
 
       <section className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
