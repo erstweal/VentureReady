@@ -205,25 +205,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEW: Social Proof / Sample Evaluations Teaser Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-emerald-50 to-teal-50">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-            See What Our Evaluations Look Like
-          </h2>
-          <p className="text-xl text-stone-600 mb-8 max-w-2xl mx-auto">
-            We provide detailed, actionable feedback—highlighting both strengths and areas for improvement
-          </p>
-          <Link 
-            href="/samples"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-bold text-lg hover:shadow-xl hover:scale-105 transition-all group"
-          >
-            <span>View Sample Evaluations</span>
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
-      </section>
-
       {/* ── Samples CTA ─────────────────────────────────────────────── */}
       <section className="py-16 px-6 bg-emerald-50 border-y border-emerald-100">
         <div className="max-w-4xl mx-auto text-center">
@@ -253,9 +234,7 @@ export default function Home() {
 
             {/* Basic */}
             <div className="p-8 rounded-2xl border-2 border-stone-200 bg-white hover:border-emerald-300 transition-all">
-              <div className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-2">
-                Basic
-              </div>
+              <div className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-2">Basic</div>
               <div className="mb-6">
                 <span className="text-5xl font-bold text-stone-900">${basicPrice}</span>
                 <span className="text-stone-600">/evaluation</span>
@@ -289,6 +268,7 @@ export default function Home() {
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-stone-900 text-white text-xs font-bold rounded-full uppercase tracking-wide whitespace-nowrap">
                 Best Value
               </div>
+              <div className="text-sm font-bold uppercase tracking-wide mb-2 opacity-90">Premium</div>
               <div className="mb-6">
                 <span className="text-5xl font-bold">${premiumPrice}</span>
                 <span className="opacity-90">/month</span>
