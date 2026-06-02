@@ -58,9 +58,9 @@ export const metadata: Metadata = {
     siteName: "VentureReady.ai",
     images: [
       {
-        url: "/logo-512.png",
-        width: 512,
-        height: 512,
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
         alt: "VentureReady.ai — AI-Powered Pitch Deck Evaluation",
       },
     ],
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "VentureReady.ai — Pitch Deck Evaluation",
     description: "Investor-ready pitch deck feedback in 24 hours. Slide-by-slide scoring against the proven VC framework.",
-    images: ["/logo-512.png"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [
