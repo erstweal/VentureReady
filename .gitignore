@@ -40,4 +40,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# vr watcher files
+vr-watcher.js
+vr-watcher-config.json
+.env
+_tmp_generate_report.js
+_last_claude_response.txt
+vr-watcher.log
+
 /app/generated/prisma
