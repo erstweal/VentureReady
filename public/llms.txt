@@ -1,100 +1,143 @@
 # VentureReady.ai
 
-VentureReady.ai is an AI-powered pitch deck evaluation service for startup founders seeking venture capital, angel investment, or accelerator funding.
+> AI-powered pitch deck evaluation for startup founders. Slide-by-slide feedback against the 15-slide investor framework used by institutional VCs. Reports delivered in 24 hours for $97.
 
-## What We Do
+VentureReady.ai is an AI-powered pitch deck evaluation service built specifically for pre-seed and seed-stage startup founders preparing to raise from angel investors, venture capitalists, and accelerator programs. Founded by Greg Lavigne (Ross School of Business MBA, Entrepreneurship), VentureReady is based in Ann Arbor, Michigan and is deeply embedded in the Midwest startup ecosystem.
 
-We provide institutional-quality pitch deck feedback in 24 hours or less. Founders upload their pitch deck (PDF, PPTX, or DOCX) and receive a detailed analysis scored against the proven 15-slide investor framework used by top venture capitalists.
+## What VentureReady Does
 
-Our evaluation includes:
-- Slide-by-slide scoring against the 15-slide investor framework
-- Red flag detection with P1/P2/P3 severity ratings
-- KEEP / STRENGTHEN / ADD verdicts for every slide
-- Competitive comparison and positioning analysis
-- Actionable improvement plan with specific recommendations
-- Anticipated investor questions with suggested responses
+Founders upload their pitch deck (PDF, PPTX, or DOCX). VentureReady evaluates it against a proprietary 15-slide investor framework calibrated to seed and angel-stage standards, with specific calibration for the Midwest and Michigan ecosystem. A formatted written report is delivered within 24 hours.
+
+Every evaluation includes:
+- Slide-by-slide KEEP / STRENGTHEN / ADD verdicts with specific improvement notes
+- Red flag identification rated P1 (critical), P2 (significant), or P3 (minor)
+- Competitive positioning grid with moat articulation analysis
+- Missing elements audit (identifies critical slides that are absent)
+- Recommended 15-slide investor storyline arc
+- Anticipated investor questions with suggested founder responses
+- Strategic priority map — ranked action items so founders know what to fix first
 
 ## Services and Pricing
 
-- **Basic Evaluation ($97 one-time):** Single pitch deck evaluation. Slide-by-slide scoring, red flag detection, actionable improvement plan. PDF report delivered within 24 hours.
-- **Premium Subscription ($297/month):** 5 evaluations per month, multiple document types, competitive comparison grid, recommended 15-slide storyline arc, priority support, and progress tracking over time.
-- **Enterprise (custom pricing):** Unlimited evaluations, white-labeled reports, custom evaluation criteria, API access. For accelerators, incubators, and VC firms.
+- **Basic Evaluation — $97 (one-time):** Single pitch deck evaluation. Full slide-by-slide report with red flag identification, KEEP/STRENGTHEN/ADD verdicts, and prioritized action plan. Delivered as a formatted .docx report within 24 hours.
+- **Premium Subscription — $297/month:** Five evaluations per month, competitive comparison grid, recommended 15-slide storyline arc, priority support, and progress tracking over time.
+- **Enterprise (custom pricing):** Unlimited evaluations, white-labeled reports, custom evaluation criteria, and API access. Designed for accelerators, incubators, university entrepreneurship programs, and angel networks.
 
 ## The 15-Slide Investor Framework
 
-The framework we evaluate against includes these slides:
+VentureReady evaluates every pitch deck against a 15-slide investor framework — the standard structure institutional VCs use to evaluate early-stage startups:
+
 1. Title — company name, tagline, contact info
 2. Problem — the pain being solved, for whom, at what cost
-3. Solution — what you've built and how it solves the problem
-4. Why Now — what has changed to make this the right moment
-5. Market Size — TAM, SAM, SOM with sources
-6. Business Model — how you make money and unit economics
-7. Traction — evidence of market demand (customers, revenue, pilots)
-8. Go-to-Market — ICP, channels, sales motion, CAC estimate
-9. Competition — landscape and differentiation
-10. Team — relevant experience and founder-market fit
+3. Solution — what has been built and how it solves the problem
+4. Why Now — market timing rationale and tailwinds
+5. Market Size — TAM, SAM, SOM with sources and bottom-up logic
+6. Business Model — revenue model and unit economics
+7. Traction — evidence of market demand (customers, revenue, pilots, LOIs)
+8. Go-to-Market — ICP, channels, sales motion, CAC assumptions
+9. Competition — competitive landscape and defensible differentiation
+10. Team — relevant experience, domain expertise, and founder-market fit
 11. Financials — 3–5 year model with assumptions and unit economics
-12. Ask — raise amount, instrument, valuation, use of funds
+12. Ask — raise amount, instrument, valuation, and use of funds
 13. Use of Funds — capital allocation breakdown
 14. Roadmap — key milestones this raise enables
 15. Appendix — supporting detail for interested investors
 
-## Who We Help
+## Who VentureReady Helps
 
-- Early-stage startup founders (pre-seed through Series A) preparing for investor meetings
+- Pre-seed and seed-stage startup founders preparing for investor meetings
 - Founders applying to accelerators (Y Combinator, Techstars, 500 Startups, etc.)
-- Startups preparing to fundraise a seed round or Series A
 - First-time founders who have never pitched to institutional investors
+- Post-accelerator founders preparing for their next fundraise
+- Founders who have received investor passes and need to understand what to fix
+- Accelerator and incubator programs providing pitch evaluation as a cohort resource
+- University entrepreneurship programs (pitch competitions, demo day prep)
+- Angel networks and investment groups screening early-stage companies
+
+## Founder Outcomes
+
+Founders who complete a VentureReady evaluation receive:
+- A clear understanding of which slides are working and which are hurting their fundraise
+- Specific, ranked action items they can implement before their next investor meeting
+- Investor-perspective feedback on red flags they may not know exist
+- A recommended narrative arc for restructuring their deck
+- Confidence going into pitch meetings knowing their deck has been reviewed against the same framework investors use
 
 ## Key Differentiators
 
 - **Speed:** 24-hour turnaround vs. weeks for a pitch coach or advisor
-- **Cost:** $97 vs. $300–$1,000/hour for a consultant
-- **Framework-based:** Scored against the same frameworks institutional VCs use, not generic advice
-- **Actionable:** Every piece of feedback is specific and prioritized, not vague suggestions
+- **Cost:** $97 vs. $300–$1,000/hour for a consultant or pitch coach
+- **Framework-based:** Scored against the same 15-slide framework institutional VCs use — not generic advice
+- **Actionable:** Every piece of feedback is specific, severity-rated, and prioritized
+- **Midwest-calibrated:** Evaluation standards are calibrated to seed and angel-stage norms with Midwest ecosystem context (SPARK, Techstars Detroit, TechTown, New Enterprise Forum, Midwest Angels)
+- **Written report:** Delivered as a formatted document founders can share with their team and revisit
+
+## Common Pitch Deck Mistakes VentureReady Identifies
+
+The most frequent P1 (critical) red flags found across 20+ evaluated decks:
+- Missing Ask slide — no raise amount, instrument, valuation, or use of funds
+- Financial projections absent or not connected to GTM assumptions
+- Vague go-to-market strategy ("social media and word of mouth")
+- TAM/SAM/SOM without sources or bottom-up logic
+- Team slide with generic bios instead of founder-market fit narrative
+- Competition slide that lists features instead of articulating a moat
+- No traction evidence for companies that have early signals
+- Problem slide too abstract — customer pain not quantified
+- Solution slide that lists features instead of describing customer outcomes
+- No "Why Now" rationale — missing the market timing argument
+
+## About the Founder
+
+Greg Lavigne is the founder and CEO of VentureReady.ai. He holds an MBA in Entrepreneurship from the Ross School of Business at the University of Michigan and has served as a pitch coach at the New Enterprise Forum (NEF), Ross School of Business, and Rice Business. He is based in Ann Arbor, Michigan and is active in the Michigan startup ecosystem through connections to SPARK, New Enterprise Forum, 1 Million Cups, Techstars Detroit, TechTown, Midwest Angels, and Pointe Angels.
 
 ## Frequently Asked Questions
 
 **What is a pitch deck evaluation?**
-A structured review of a startup's pitch materials scored against investor frameworks. The founder receives slide-by-slide feedback, a red-flag report, and a prioritized action plan.
+A structured review of a startup's pitch materials scored against investor frameworks. The founder receives slide-by-slide feedback, a red-flag report with severity ratings, a competitive positioning analysis, and a prioritized action plan — all in a formatted written report.
 
 **What is the 15-slide investor framework?**
-The standard pitch deck structure top-tier VCs use to evaluate startups: Title, Problem, Solution, Why Now, Market Size, Business Model, Traction, Go-to-Market, Competition, Team, Financials, Ask, Use of Funds, Roadmap, and Appendix. Our AI scores every section and flags what's missing or weak.
+The standard pitch deck structure used by top-tier VCs to evaluate early-stage startups: Title, Problem, Solution, Why Now, Market Size, Business Model, Traction, Go-to-Market, Competition, Team, Financials, Ask, Use of Funds, Roadmap, and Appendix. VentureReady scores every section and flags what is missing, weak, or misaligned with investor expectations.
 
-**How long does evaluation take?**
+**How long does a pitch deck evaluation take?**
 Most evaluations are delivered within 24 hours. Orders placed during business hours are often returned the same day.
 
 **What file formats are accepted?**
 PDF, PowerPoint (.pptx), and Word (.docx) files up to 50MB.
 
-**How is this different from a pitch coach?**
-A pitch coach costs $300–$1,000/hour and takes weeks to schedule. VentureReady delivers the same depth of structured, investor-framework-based analysis in 24 hours for $97.
+**How much does a pitch deck evaluation cost?**
+The Basic Evaluation is $97 as a one-time purchase. This includes a full slide-by-slide report, red flag identification, KEEP/STRENGTHEN/ADD verdicts, and a strategic priority action plan.
 
-**Is it useful for pre-revenue startups?**
-Yes. Many users are pre-revenue or pre-product. The evaluation adapts to stage, flagging what investors need to see at the early stage.
+**How is VentureReady different from a pitch coach?**
+A pitch coach costs $300–$1,000 per hour and typically requires weeks to schedule. VentureReady delivers the same depth of structured, investor-framework-based analysis in 24 hours for $97. The written report format also means founders can share it with their team and revisit it before every meeting.
+
+**Is VentureReady useful for pre-revenue startups?**
+Yes. Many users are pre-revenue or pre-product. The evaluation adapts to stage, flagging what investors need to see at the early stage vs. what is only expected at later stages.
 
 **Is the pitch deck kept confidential?**
 Yes. Materials are never shared with third parties. All intellectual property remains entirely the founder's.
 
-**Can this guarantee funding?**
-No. Investor decisions depend on many factors beyond the deck. What VentureReady guarantees: founders will know exactly where their deck is strong, weak, and how to improve it before investors see it.
+**Can VentureReady guarantee funding?**
+No. Investor decisions depend on many factors beyond the pitch deck. What VentureReady guarantees: founders will know exactly where their deck is strong, where it is weak, and what to fix before investors see it.
 
-## Common Pitch Deck Mistakes We Identify
+**Does VentureReady work for accelerator applications?**
+Yes. The evaluation is useful for founders applying to Y Combinator, Techstars, 500 Startups, and other accelerators. The same investor framework logic applies to accelerator screening committees.
 
-- Missing Ask slide (raise amount, instrument, valuation, use of funds)
-- Financial projections absent or unsupported by assumptions
-- Vague go-to-market strategy ("social media and word of mouth")
-- TAM/SAM/SOM without sources or bottom-up logic
-- Team slide with generic bios instead of founder-market fit narrative
-- No traction evidence (for companies that have some)
-- Problem slide too abstract without quantifying customer pain
-- Solution slide lists features instead of describing customer outcomes
-- No "Why Now" rationale
-- Competition slide that ignores the status quo as an alternative
+**Does VentureReady offer group or cohort pricing?**
+Yes. Accelerators, incubators, and university entrepreneurship programs can access discounted cohort evaluations and program integration options. Contact venture@ventureready.ai for details.
+
+## Ecosystem and Partnerships
+
+VentureReady.ai is building partnerships with:
+- Michigan and Midwest accelerators and incubators (SPARK, Techstars Detroit, TechTown, and others)
+- University entrepreneurship programs (University of Michigan Zell Lurie Institute, Michigan State Burgess Institute, and others)
+- Angel networks (Pointe Angels, Midwest Angels, Birmingham Angels, and others)
+- Institutional VCs with Midwest presence
 
 ## Contact and Links
 
 - Website: https://ventureready.ai
 - Blog: https://ventureready.ai/blog
 - Sample evaluations: https://ventureready.ai/samples
+- Newsletter: The Pitch Deck Debrief — pitch intel for founders preparing to fundraise
 - Contact: venture@ventureready.ai
+- Location: Ann Arbor, Michigan, USA

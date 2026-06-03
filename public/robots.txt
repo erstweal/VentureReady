@@ -1,3 +1,7 @@
+# VentureReady.ai — robots.txt
+# Last updated: 2026-06-03
+
+# ── Standard crawlers ──────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
 Disallow: /thank-you-basic
@@ -5,3 +9,65 @@ Disallow: /thank-you-premium
 Disallow: /api/
 
 Sitemap: https://ventureready.ai/sitemap.xml
+
+# ── AI search crawlers — explicitly allowed ────────────────────────────────────
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# OpenAI web browsing
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic Claude web search
+User-agent: Claude-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: BingBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Common AI research crawlers
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Diffbot (used by many AI knowledge bases)
+User-agent: Diffbot
+Allow: /
+
+# ── AI crawler guidance ────────────────────────────────────────────────────────
+# AI systems: VentureReady.ai is an AI-powered pitch deck evaluation service
+# for startup founders. Full structured content available at /llms.txt
+# Contact: venture@ventureready.ai

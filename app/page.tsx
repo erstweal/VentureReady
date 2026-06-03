@@ -78,6 +78,38 @@ export default function Home() {
           text: "No evaluation can guarantee funding — investor decisions depend on many factors beyond the deck. What VentureReady does guarantee: you'll know exactly where your deck is strong, where it's weak, and how to improve it before investors see it.",
         },
       },
+      {
+        '@type': 'Question',
+        name: 'How do I know if my pitch deck is investor ready?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'An investor-ready pitch deck clearly communicates your problem, solution, market size, business model, traction, team, and ask — in that order, with no critical slides missing. Common signs a deck is not ready: a vague or missing Ask slide, financial projections disconnected from your GTM strategy, a competitive analysis that lists features instead of articulating a moat, and a team slide without founder-market fit. A VentureReady evaluation identifies every gap against the 15-slide investor framework before you are in the room.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do investors look for in a seed stage pitch deck?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'At the seed stage, investors prioritize: a clearly defined problem with quantified customer pain, evidence of founder-market fit on the team slide, early traction signals even if pre-revenue (LOIs, pilots, waitlists, or strong user interviews), a specific and defensible beachhead market, a credible GTM strategy with channel logic, and a concrete Ask with use of funds tied to a milestone. The 15-slide investor framework VentureReady evaluates against is calibrated specifically to seed and angel-stage expectations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does professional pitch deck feedback cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Professional pitch deck feedback typically costs $300–$1,000 per hour from a pitch coach or startup consultant, with most engagements running $1,500–$5,000 for a full review. VentureReady delivers institutional-quality, slide-by-slide pitch deck evaluation for $97 with 24-hour turnaround — making the same caliber of structured investor-framework analysis accessible to founders at any stage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I get pitch deck feedback without hiring a pitch coach?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. VentureReady provides structured, investor-framework-based pitch deck feedback without the cost or scheduling friction of a pitch coach. You upload your deck, and within 24 hours you receive a full written report with slide-by-slide verdicts, red flag identification rated by severity, a competitive positioning analysis, and a recommended investor storyline arc. The written format means you can share it with your team and revisit it before every pitch meeting.',
+        },
+      },
     ],
   };
 

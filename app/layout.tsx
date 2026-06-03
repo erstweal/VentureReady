@@ -99,6 +99,74 @@ const jsonLd = {
       },
       description:
         "AI-powered pitch deck evaluation for startup founders. Get institutional-quality investor feedback in 24 hours.",
+      foundingDate: "2024",
+      foundingLocation: "Ann Arbor, Michigan, USA",
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "venture@ventureready.ai",
+        contactType: "customer support",
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/ventureready-ai",
+      ],
+      founder: {
+        "@type": "Person",
+        name: "Greg Lavigne",
+        jobTitle: "Founder & CEO",
+        alumniOf: {
+          "@type": "EducationalOrganization",
+          name: "University of Michigan, Ross School of Business",
+        },
+      },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ventureready.ai/#app",
+      name: "VentureReady.ai",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      url: "https://ventureready.ai",
+      description:
+        "AI-powered pitch deck evaluation platform for startup founders. Upload your deck and receive a slide-by-slide investor-framework analysis, red flag identification, competitive positioning grid, and recommended 15-slide storyline arc within 24 hours.",
+      provider: { "@id": "https://ventureready.ai/#organization" },
+      featureList: [
+        "Slide-by-slide KEEP / STRENGTHEN / ADD verdicts",
+        "Red flag identification with P1/P2/P3 severity ratings",
+        "Competitive positioning grid",
+        "Recommended 15-slide investor storyline arc",
+        "Missing elements audit",
+        "Anticipated investor questions",
+        "Strategic priority action map",
+        "24-hour report delivery",
+      ],
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Basic Evaluation",
+          price: "97",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          description: "Single pitch deck evaluation with full slide-by-slide report delivered within 24 hours.",
+        },
+        {
+          "@type": "Offer",
+          name: "Premium Subscription",
+          price: "297",
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          description: "Five evaluations per month with competitive grid, storyline arc, and priority support.",
+        },
+      ],
+      audience: {
+        "@type": "Audience",
+        audienceType: "Pre-seed and seed-stage startup founders seeking venture capital or angel investment",
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.9",
+        reviewCount: "20",
+        bestRating: "5",
+      },
     },
     {
       "@type": "WebSite",
