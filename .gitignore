@@ -49,3 +49,4 @@ _last_claude_response.txt
 vr-watcher.log
 
 /app/generated/prisma
+".tmp.driveupload/" 
