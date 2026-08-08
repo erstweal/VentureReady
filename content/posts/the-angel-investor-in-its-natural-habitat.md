@@ -80,4 +80,4 @@ Your deck isn't pitched into a vacuum. It's pitched into an ecosystem with estab
 
 If you want to know how your deck reads to that room *before* you're standing in it, upload it at [VentureReady.ai](https://ventureready.ai). You'll get a slide-by-slide evaluation built on how screening committees actually think — where you're strong, where the herd gets restless, and what to fix first.
 
-And if you'd like to watch a founder approach a conference room to the sound of reverent orchestral strings, [the documentary is here](VIDEO_LINK_PLACEHOLDER). Filmed on location, somewhere in the American Midwest.
+And if you'd like to watch a founder approach a conference room to the sound of reverent orchestral strings, [the documentary is here](https://www.youtube.com/watch?v=gefo-37fRTs). Filmed on location, somewhere in the American Midwest.
