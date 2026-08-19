@@ -5,10 +5,13 @@ import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const basicPrice = 97;
-  const premiumPrice = 297;
+  const roadmapPrice = 147;
+  const fundmatchPrice = 127;
 
   const STRIPE_BASIC_LINK = "https://buy.stripe.com/eVqdRb4xz4aabyCaxE3oA03";
-  const STRIPE_PREMIUM_LINK = "https://buy.stripe.com/14A4gB1ln8qqbyCeNU3oA04";
+  // Note: the Growth Roadmap and Fund Match payment links live in the report-delivery
+  // email (see delivery-email-template.md), not on the site — the cards here are
+  // intentionally informational only, since both add-ons require a completed evaluation.
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -100,6 +103,22 @@ export default function Home() {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Professional pitch deck feedback typically costs $300–$1,000 per hour from a pitch coach or startup consultant, with most engagements running $1,500–$5,000 for a full review. VentureReady delivers institutional-quality, slide-by-slide pitch deck evaluation for $97 with 24-hour turnaround — making the same caliber of structured investor-framework analysis accessible to founders at any stage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are the VentureReady add-on reports?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'After your evaluation, two companion reports are available. The Growth Roadmap ($147) turns your evaluation findings into a specific 90-day action plan — customer discovery scripts, go-to-market phasing, and product sequencing. The Fund Match ($127) identifies the six actively-investing VC funds whose published investment thesis best fits your company, with the reasoning, check sizes, and a recommended approach sequence. Both are offered when your evaluation report is delivered.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I buy the Growth Roadmap or Fund Match without an evaluation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No — both add-on reports are built directly from your evaluation findings, so they require a completed VentureReady evaluation first. The evaluation diagnoses where your pitch stands; the Growth Roadmap tells you what to do about it, and the Fund Match tells you who to pitch. Skipping the diagnosis would mean weaker recommendations, so we don\'t offer them standalone.',
         },
       },
       {
@@ -256,7 +275,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { n: '1', title: 'Purchase & Upload', body: 'Choose your plan, complete payment, and upload your pitch deck, business plan, or executive summary (PDF, PowerPoint, or Word).' },
+              { n: '1', title: 'Purchase & Upload', body: 'Complete payment and upload your pitch deck, business plan, or executive summary (PDF, PowerPoint, or Word).' },
               { n: '2', title: 'AI Evaluation', body: 'Our AI analyzes your materials against the VentureReady framework, scoring each section and identifying strengths and weaknesses.' },
               { n: '3', title: 'Get Your Report', body: 'Receive a comprehensive PDF report via email within 24 hours with detailed scores, feedback, and specific recommendations for improvement.' },
             ].map((step) => (
@@ -336,18 +355,38 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold text-stone-900 mb-4">Simple, Transparent Pricing</h2>
-            <p className="text-xl text-stone-600">Choose the plan that fits your needs</p>
+            <p className="text-xl text-stone-600">Start with the evaluation — add exactly what you need after</p>
+          </div>
+
+          {/* ── The Ladder ── */}
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 mb-12 text-center">
+            {[
+              { step: 'Diagnose', body: 'The Evaluation finds every gap' },
+              { step: 'Fix', body: 'The Growth Roadmap tells you what to do' },
+              { step: 'Target', body: 'The Fund Match tells you who to pitch' },
+            ].map((s, i) => (
+              <div key={s.step} className="flex items-center gap-3 md:gap-6">
+                <div className="px-5 py-3 bg-stone-50 border border-stone-200 rounded-xl">
+                  <span className="font-bold text-emerald-700">{s.step}</span>
+                  <span className="text-stone-600 text-sm block md:inline md:ml-2">{s.body}</span>
+                </div>
+                {i < 2 && <span className="text-stone-400 text-2xl rotate-90 md:rotate-0">→</span>}
+              </div>
+            ))}
           </div>
 
           {/* ── Pricing Cards ── */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
 
-            {/* Basic */}
-            <div className="p-8 rounded-2xl border-2 border-stone-200 bg-white hover:border-emerald-300 transition-all">
-              <div className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-2">Basic</div>
+            {/* Evaluation - Featured */}
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white relative transform lg:scale-105 shadow-2xl">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-stone-900 text-white text-xs font-bold rounded-full uppercase tracking-wide whitespace-nowrap">
+                Start Here
+              </div>
+              <div className="text-sm font-bold uppercase tracking-wide mb-2 opacity-90">Evaluation</div>
               <div className="mb-6">
-                <span className="text-5xl font-bold text-stone-900">${basicPrice}</span>
-                <span className="text-stone-600">/evaluation</span>
+                <span className="text-5xl font-bold">${basicPrice}</span>
+                <span className="opacity-90">/evaluation</span>
               </div>
               <ul className="space-y-4 mb-8 mt-4">
                 {[
@@ -360,53 +399,78 @@ export default function Home() {
                   '24-hour delivery',
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-stone-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={STRIPE_BASIC_LINK}
-                className="block w-full py-3 border-2 border-emerald-600 text-emerald-700 rounded-lg font-semibold hover:bg-emerald-50 transition-colors text-center"
-              >
-                Get Started
-              </a>
-            </div>
-
-            {/* Premium - Featured */}
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white relative transform md:scale-105 shadow-2xl">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-stone-900 text-white text-xs font-bold rounded-full uppercase tracking-wide whitespace-nowrap">
-                Best Value
-              </div>
-              <div className="text-sm font-bold uppercase tracking-wide mb-2 opacity-90">Premium</div>
-              <div className="mb-6">
-                <span className="text-5xl font-bold">${premiumPrice}</span>
-                <span className="opacity-90">/month</span>
-              </div>
-              <ul className="space-y-4 mb-8 mt-4">
-                {[
-                  '5 evaluations per month',
-                  'Multiple document types',
-                  'Detailed section-by-section analysis',
-                  'Competitive comparison grid',
-                  'Recommended 15-slide storyline arc',
-                  'Priority support',
-                  'Track improvement over time',
-                ].map((item) => (
-                  <li key={item} className="flex items-start space-x-3">
                     <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <a
-                href={STRIPE_PREMIUM_LINK}
+                href={STRIPE_BASIC_LINK}
                 className="block w-full py-3 bg-white text-emerald-600 rounded-lg font-bold hover:bg-stone-50 transition-colors text-center"
               >
-                Start Now
+                Get Started
               </a>
-              <p className="text-center text-sm mt-3 opacity-80">
-                Save $188 vs paying per evaluation
+            </div>
+
+            {/* Growth Roadmap - Add-on */}
+            <div className="p-8 rounded-2xl border-2 border-stone-200 bg-white hover:border-emerald-300 transition-all relative">
+              <div className="absolute -top-3 left-6 px-3 py-0.5 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold rounded-full uppercase tracking-wide">
+                Add-On
+              </div>
+              <div className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-2">Growth Roadmap</div>
+              <div className="mb-6">
+                <span className="text-5xl font-bold text-stone-900">${roadmapPrice}</span>
+                <span className="text-stone-600">/report</span>
+              </div>
+              <ul className="space-y-4 mb-8 mt-4">
+                {[
+                  'Your 90-day plan to investor-ready',
+                  'Built from your evaluation findings',
+                  'Customer discovery scripts & schedule',
+                  'Beachhead go-to-market phasing',
+                  'Product improvement sequencing',
+                  'Ecosystem engagement plan',
+                  'Milestone map to your raise',
+                ].map((item) => (
+                  <li key={item} className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-center text-sm text-stone-500 border-t border-stone-100 pt-4">
+                Offered with your completed evaluation
+              </p>
+            </div>
+
+            {/* Fund Match - Add-on */}
+            <div className="p-8 rounded-2xl border-2 border-stone-200 bg-white hover:border-emerald-300 transition-all relative">
+              <div className="absolute -top-3 left-6 px-3 py-0.5 bg-amber-100 border border-amber-200 text-amber-800 text-xs font-bold rounded-full uppercase tracking-wide">
+                Add-On
+              </div>
+              <div className="text-sm font-bold text-stone-600 uppercase tracking-wide mb-2">Fund Match</div>
+              <div className="mb-6">
+                <span className="text-5xl font-bold text-stone-900">${fundmatchPrice}</span>
+                <span className="text-stone-600">/report</span>
+              </div>
+              <ul className="space-y-4 mb-8 mt-4">
+                {[
+                  'The 6 funds that fit your startup',
+                  'Matched from a verified database of actively-investing funds',
+                  'Why-fit reasoning for each fund',
+                  'Check sizes & lead behavior',
+                  'Recommended approach sequence',
+                  'Near-miss funds & what would change',
+                  'Freshly verified before delivery',
+                ].map((item) => (
+                  <li key={item} className="flex items-start space-x-3">
+                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-center text-sm text-stone-500 border-t border-stone-100 pt-4">
+                Offered with your completed evaluation
               </p>
             </div>
 
@@ -442,9 +506,10 @@ export default function Home() {
           </div>
 
           <p className="text-center text-stone-500 text-sm mt-8">
-            Need more than 5 evaluations per month?{' '}
+            The Growth Roadmap and Fund Match are built from your evaluation findings, so they become available
+            once your evaluation is delivered — purchase links arrive with your report.{' '}
             <a href="mailto:venture@ventureready.ai" className="text-emerald-700 font-semibold hover:underline">
-              Contact us for Enterprise pricing
+              Running an accelerator or cohort? Contact us for Enterprise pricing
             </a>
           </p>
         </div>
@@ -490,6 +555,14 @@ export default function Home() {
               {
                 q: 'Will this guarantee I get funded?',
                 a: 'No evaluation can guarantee funding — investor decisions depend on many factors beyond the deck. What VentureReady does guarantee: you\'ll know exactly where your deck is strong, where it\'s weak, and how to improve it before investors see it.',
+              },
+              {
+                q: 'What are the add-on reports?',
+                a: 'After your evaluation, two companion reports are available. The Growth Roadmap ($147) turns your evaluation findings into a specific 90-day action plan — customer discovery scripts, go-to-market phasing, and product sequencing. The Fund Match ($127) identifies the six actively-investing VC funds whose published thesis best fits your company, with the reasoning, check sizes, and a recommended approach sequence.',
+              },
+              {
+                q: 'Can I buy the add-on reports without an evaluation?',
+                a: 'No — both are built directly from your evaluation findings, so they require a completed evaluation first. The evaluation diagnoses where your pitch stands; the Growth Roadmap tells you what to do about it, and the Fund Match tells you who to pitch. Purchase links for both arrive with your evaluation report.',
               },
             ].map((item) => (
               <div key={item.q} className="bg-white rounded-2xl p-7 border border-stone-100 shadow-sm">

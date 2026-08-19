@@ -30,6 +30,7 @@ export default function Navbar() {
             <Link href="/samples" className="text-stone-600 hover:text-stone-900 transition-colors">Samples</Link>
             <Link href="/#pricing" className="text-stone-600 hover:text-stone-900 transition-colors">Pricing</Link>
             <Link href="/#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors">How It Works</Link>
+            <Link href="/blog" className="text-stone-600 hover:text-stone-900 transition-colors">Blog</Link>
           </div>
 
           {/* Desktop CTA */}
@@ -58,6 +59,7 @@ export default function Navbar() {
             <Link href="/samples" className="block text-stone-600 hover:text-stone-900 py-2">Samples</Link>
             <Link href="/#pricing" className="block text-stone-600 hover:text-stone-900 py-2">Pricing</Link>
             <Link href="/#how-it-works" className="block text-stone-600 hover:text-stone-900 py-2">How It Works</Link>
+            <Link href="/blog" className="block text-stone-600 hover:text-stone-900 py-2">Blog</Link>
             <Link
               href="/#pricing"
               className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold"
