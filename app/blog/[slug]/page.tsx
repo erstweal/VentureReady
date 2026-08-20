@@ -111,7 +111,7 @@ export default async function BlogPost({ params }: Props) {
       />
       <Navbar />
 
-      <section className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
+      <section id="main-content" className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
         <div className="max-w-3xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm">
             Back to Blog

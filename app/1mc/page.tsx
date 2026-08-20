@@ -47,11 +47,18 @@ export default function OneMCPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#0D1B2A] flex flex-col items-center justify-center px-4 py-16">
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#1A9E8F] focus:text-white focus:rounded-lg focus:font-semibold"
+      >
+        Skip to main content
+      </a>
+      <main id="main-content" className="min-h-screen bg-[#0D1B2A] flex flex-col items-center justify-center px-4 py-16">
       {/* Logo */}
       <div className="mb-10 flex items-center gap-3">
         <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1A9E8F] to-[#0D7A6E] flex items-center justify-center shadow-lg">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M3 14L7 10L10 13L14 7L17 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
@@ -87,16 +94,19 @@ export default function OneMCPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="founder@startup.com"
+                  autoComplete="email"
+                  aria-required="true"
+                  aria-describedby={error ? 'form-error' : undefined}
                   className="w-full bg-[#0D1B2A] border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#1A9E8F] focus:ring-1 focus:ring-[#1A9E8F] transition-all"
                 />
               </div>
 
               {/* Usefulness question */}
               <div className="mb-7">
-                <p className="text-white/80 text-sm font-medium mb-3">
+                <p id="useful-label" className="text-white/80 text-sm font-medium mb-3">
                   Is this something you&apos;d find useful?
                 </p>
-                <div className="grid grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 gap-2" role="group" aria-labelledby="useful-label">
                   {[
                     { value: "yes_ready", label: "Yes — I'm actively working on a pitch" },
                     { value: "yes_future", label: "Yes — I could see using this in the future" },
@@ -107,17 +117,21 @@ export default function OneMCPage() {
                       key={option.value}
                       type="button"
                       onClick={() => setUseful(option.value)}
+                      aria-pressed={useful === option.value}
                       className={`w-full text-left px-4 py-3 rounded-lg text-sm border transition-all ${
                         useful === option.value
                           ? "bg-[#1A9E8F]/15 border-[#1A9E8F] text-white"
                           : "bg-[#0D1B2A] border-white/15 text-white/60 hover:border-white/30 hover:text-white/80"
                       }`}
                     >
-                      <span className={`inline-block w-4 h-4 rounded-full border mr-3 align-middle transition-all ${
-                        useful === option.value
-                          ? "border-[#1A9E8F] bg-[#1A9E8F]"
-                          : "border-white/30"
-                      }`} />
+                      <span
+                        aria-hidden="true"
+                        className={`inline-block w-4 h-4 rounded-full border mr-3 align-middle transition-all ${
+                          useful === option.value
+                            ? "border-[#1A9E8F] bg-[#1A9E8F]"
+                            : "border-white/30"
+                        }`}
+                      />
                       {option.label}
                     </button>
                   ))}
@@ -125,7 +139,7 @@ export default function OneMCPage() {
               </div>
 
               {error && (
-                <p className="text-red-400 text-sm mb-4">{error}</p>
+                <p id="form-error" role="alert" className="text-red-400 text-sm mb-4">{error}</p>
               )}
 
               <button
@@ -152,11 +166,11 @@ export default function OneMCPage() {
           // Thank you state
           <div className="bg-[#162232] rounded-2xl border border-white/10 px-8 py-12 shadow-2xl text-center">
             <div className="w-16 h-16 rounded-full bg-[#1A9E8F]/20 flex items-center justify-center mx-auto mb-6">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                 <path d="M5 14L11 20L23 8" stroke="#1A9E8F" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <h2 className="text-white text-2xl font-bold mb-3">You&apos;re on the list.</h2>
+            <h1 className="text-white text-2xl font-bold mb-3">You&apos;re on the list.</h1>
             <p className="text-white/60 text-base leading-relaxed mb-8">
               Thanks for your interest in VentureReady. We&apos;ll be in touch soon — and if you have a deck ready to evaluate, just reply to our email and we&apos;ll get started.
             </p>
@@ -183,5 +197,6 @@ export default function OneMCPage() {
         © 2026 VentureReady.ai · We respect your inbox.
       </p>
     </main>
+    </>
   );
 }

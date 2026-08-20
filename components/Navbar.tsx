@@ -12,7 +12,14 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg focus:font-semibold"
+      >
+        Skip to main content
+      </a>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
 
@@ -47,6 +54,9 @@ export default function Navbar() {
           <button
             className="md:hidden p-2 text-stone-600"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -54,7 +64,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pt-4 pb-3 space-y-3 border-t border-stone-200 mt-4">
+          <div id="mobile-menu" className="md:hidden pt-4 pb-3 space-y-3 border-t border-stone-200 mt-4">
             <Link href="/#features" className="block text-stone-600 hover:text-stone-900 py-2">Features</Link>
             <Link href="/samples" className="block text-stone-600 hover:text-stone-900 py-2">Samples</Link>
             <Link href="/#pricing" className="block text-stone-600 hover:text-stone-900 py-2">Pricing</Link>
@@ -69,6 +79,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </nav>
+      </nav>
+    </>
   );
 }

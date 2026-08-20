@@ -142,7 +142,7 @@ export default function Home() {
       <Navbar />
 
       {/* ── Hero ────────────────────────────────────────────────────── */}
-      <section className="pt-32 pb-20 px-6">
+      <section id="main-content" className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">

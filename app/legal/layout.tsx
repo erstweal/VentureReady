@@ -12,6 +12,12 @@ const legalLinks = [
 export default function LegalLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-stone-950 text-stone-300">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg focus:font-semibold"
+      >
+        Skip to main content
+      </a>
       <header className="border-b border-stone-800 px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <Link href="/" className="text-emerald-400 hover:text-emerald-300 text-sm transition-colors">
@@ -42,7 +48,7 @@ export default function LegalLayout({ children }: { children: React.ReactNode })
           </nav>
         </aside>
 
-        <main className="flex-1 min-w-0 max-w-3xl">
+        <main id="main-content" className="flex-1 min-w-0 max-w-3xl">
           <div className="lg:hidden flex flex-wrap gap-2 mb-10">
             {legalLinks.map(({ href, label }) => (
               <Link

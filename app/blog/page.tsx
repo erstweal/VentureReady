@@ -23,7 +23,7 @@ export default function BlogIndex() {
     <div className="min-h-screen bg-stone-50">
       <Navbar />
 
-      <section className="pt-32 pb-16 px-6 bg-white border-b border-stone-100">
+      <section id="main-content" className="pt-32 pb-16 px-6 bg-white border-b border-stone-100">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-4 py-1.5 bg-emerald-100 border border-emerald-200 rounded-full mb-6">
             <span className="text-sm font-semibold text-emerald-900">Founder Resources</span>
