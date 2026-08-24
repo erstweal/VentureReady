@@ -51,3 +51,7 @@ vr-watcher.log
 /app/generated/prisma
 .tmp.driveupload/
 
+# claude code local tooling state
+.claude/launch.json
+.claude/worktrees/
+
