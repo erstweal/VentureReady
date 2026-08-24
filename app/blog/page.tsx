@@ -23,7 +23,9 @@ export default function BlogIndex() {
     <div className="min-h-screen bg-stone-50">
       <Navbar />
 
-      <section id="main-content" className="pt-32 pb-16 px-6 bg-white border-b border-stone-100">
+      <main id="main-content" tabIndex={-1}>
+
+      <section className="pt-32 pb-16 px-6 bg-white border-b border-stone-100">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-4 py-1.5 bg-emerald-100 border border-emerald-200 rounded-full mb-6">
             <span className="text-sm font-semibold text-emerald-900">Founder Resources</span>
@@ -74,11 +76,13 @@ export default function BlogIndex() {
           <p className="text-lg text-stone-600 mb-8">
             Get slide-by-slide feedback against the investor framework - delivered in 24 hours.
           </p>
-          <a href="/#pricing" className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-800 transition-all shadow-lg shadow-emerald-200">
+          <a href="/#pricing" className="inline-block px-8 py-4 bg-gradient-to-r from-emerald-700 to-teal-800 text-white rounded-xl font-bold text-lg hover:from-emerald-800 hover:to-teal-900 transition-all shadow-lg shadow-emerald-200">
             See Pricing
           </a>
         </div>
       </section>
+
+      </main>
 
       <footer className="bg-stone-900 text-stone-400 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">

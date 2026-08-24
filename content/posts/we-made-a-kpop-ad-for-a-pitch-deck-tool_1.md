@@ -4,7 +4,7 @@ date: "2026-06-29"
 excerpt: "We just dropped a cyberpunk K-pop promo video for VentureReady.ai. Yes, really. And the lesson buried inside it is the same one we put in every pitch deck evaluation we write."
 ---
 
-# We Made a K-Pop Ad for a Pitch Deck Tool. Here's Why That's Actually the Point.
+## We Made a K-Pop Ad for a Pitch Deck Tool. Here's Why That's Actually the Point.
 
 We just dropped a cyberpunk K-pop promo video for VentureReady.ai.
 

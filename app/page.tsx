@@ -141,8 +141,10 @@ export default function Home() {
 
       <Navbar />
 
+      <main id="main-content" tabIndex={-1}>
+
       {/* ── Hero ────────────────────────────────────────────────────── */}
-      <section id="main-content" className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -150,12 +152,9 @@ export default function Home() {
                 <span className="text-sm font-semibold text-emerald-900">AI-Powered Business Evaluation</span>
               </div>
 
-              <h1
-                className="text-5xl lg:text-6xl font-bold text-stone-900 leading-tight tracking-tight"
-                aria-label="AI-Powered Pitch Deck Evaluation for Startup Founders"
-              >
-                <span aria-hidden="true">Get Your Business</span>
-                <span aria-hidden="true" className="block mt-2 bg-gradient-to-r from-emerald-600 to-teal-700 bg-clip-text text-transparent">
+              <h1 className="text-5xl lg:text-6xl font-bold text-stone-900 leading-tight tracking-tight">
+                <span>Get Your Business</span>
+                <span className="block mt-2 bg-gradient-to-r from-emerald-700 to-teal-800 bg-clip-text text-transparent">
                   Venture Ready
                 </span>
               </h1>
@@ -168,7 +167,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href={STRIPE_BASIC_LINK}
-                  className="px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-xl font-bold text-lg hover:from-emerald-700 hover:to-teal-800 transition-all shadow-lg shadow-emerald-200 text-center"
+                  className="px-8 py-4 bg-gradient-to-r from-emerald-700 to-teal-800 text-white rounded-xl font-bold text-lg hover:from-emerald-800 hover:to-teal-900 transition-all shadow-lg shadow-emerald-200 text-center"
                 >
                   Get Started — $97
                 </a>
@@ -181,7 +180,7 @@ export default function Home() {
               </div>
 
               <a href="/samples" className="inline-block text-emerald-700 font-semibold hover:text-emerald-900 underline underline-offset-4">
-                View sample evaluations →
+                View sample evaluations <span aria-hidden="true">→</span>
               </a>
             </div>
 
@@ -194,9 +193,9 @@ export default function Home() {
                 </div>
                 <div className="space-y-4">
                   {[
-                    { label: 'Market Analysis', status: 'Excellent', color: 'text-green-600', bg: 'bg-green-50', note: 'Your TAM calculation is well-researched with credible sources' },
+                    { label: 'Market Analysis', status: 'Excellent', color: 'text-green-700', bg: 'bg-green-50', note: 'Your TAM calculation is well-researched with credible sources' },
                     { label: 'Financial Projections', status: 'Strong', color: 'text-blue-600', bg: 'bg-blue-50', note: 'Revenue model shows realistic growth trajectory' },
-                    { label: 'Competitive Analysis', status: 'Needs Work', color: 'text-amber-600', bg: 'bg-amber-50', note: 'Add more differentiation from Competitor X' },
+                    { label: 'Competitive Analysis', status: 'Needs Work', color: 'text-amber-700', bg: 'bg-amber-50', note: 'Add more differentiation from Competitor X' },
                   ].map((item) => (
                     <div key={item.label} className={`${item.bg} rounded-lg p-4`}>
                       <div className="flex items-center justify-between mb-1">
@@ -273,21 +272,21 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-stone-900 mb-4">How It Works</h2>
             <p className="text-xl text-stone-600">Three simple steps to get professional feedback on your pitch</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
+          <ol className="grid md:grid-cols-3 gap-12 list-none p-0">
             {[
               { n: '1', title: 'Purchase & Upload', body: 'Complete payment and upload your pitch deck, business plan, or executive summary (PDF, PowerPoint, or Word).' },
               { n: '2', title: 'AI Evaluation', body: 'Our AI analyzes your materials against the VentureReady framework, scoring each section and identifying strengths and weaknesses.' },
               { n: '3', title: 'Get Your Report', body: 'Receive a comprehensive PDF report via email within 24 hours with detailed scores, feedback, and specific recommendations for improvement.' },
             ].map((step) => (
-              <div key={step.n} className="relative">
-                <div className="absolute top-0 left-8 text-8xl font-bold text-emerald-100 -z-10">{step.n}</div>
+              <li key={step.n} className="relative">
+                <div aria-hidden="true" className="absolute top-0 left-8 text-8xl font-bold text-emerald-100 -z-10">{step.n}</div>
                 <div className="pt-12">
                   <h3 className="text-2xl font-bold text-stone-900 mb-3">{step.title}</h3>
                   <p className="text-stone-600">{step.body}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
@@ -343,9 +342,9 @@ export default function Home() {
           </p>
           <a
             href="/samples"
-            className="inline-block px-8 py-4 bg-emerald-600 text-white rounded-xl font-bold text-lg hover:bg-emerald-700 transition-colors"
+            className="inline-block px-8 py-4 bg-emerald-700 text-white rounded-xl font-bold text-lg hover:bg-emerald-800 transition-colors"
           >
-            View Sample Evaluations →
+            View Sample Evaluations <span aria-hidden="true">→</span>
           </a>
         </div>
       </section>
@@ -370,7 +369,7 @@ export default function Home() {
                   <span className="font-bold text-emerald-700">{s.step}</span>
                   <span className="text-stone-600 text-sm block md:inline md:ml-2">{s.body}</span>
                 </div>
-                {i < 2 && <span className="text-stone-400 text-2xl rotate-90 md:rotate-0">→</span>}
+                {i < 2 && <span aria-hidden="true" className="text-stone-500 text-2xl rotate-90 md:rotate-0">→</span>}
               </div>
             ))}
           </div>
@@ -379,14 +378,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
 
             {/* Evaluation - Featured */}
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white relative transform lg:scale-105 shadow-2xl">
+            <div className="p-8 rounded-2xl bg-gradient-to-br from-emerald-700 to-teal-800 text-white relative transform lg:scale-105 shadow-2xl">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-stone-900 text-white text-xs font-bold rounded-full uppercase tracking-wide whitespace-nowrap">
                 Start Here
               </div>
-              <div className="text-sm font-bold uppercase tracking-wide mb-2 opacity-90">Evaluation</div>
+              <div className="text-sm font-bold uppercase tracking-wide mb-2">Evaluation</div>
               <div className="mb-6">
                 <span className="text-5xl font-bold">${basicPrice}</span>
-                <span className="opacity-90">/evaluation</span>
+                <span>/evaluation</span>
               </div>
               <ul className="space-y-4 mb-8 mt-4">
                 {[
@@ -399,14 +398,14 @@ export default function Home() {
                   '24-hour delivery',
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                    <Check aria-hidden="true" className="w-5 h-5 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href={STRIPE_BASIC_LINK}
-                className="block w-full py-3 bg-white text-emerald-600 rounded-lg font-bold hover:bg-stone-50 transition-colors text-center"
+                className="block w-full py-3 bg-white text-emerald-700 rounded-lg font-bold hover:bg-stone-50 transition-colors text-center"
               >
                 Get Started
               </a>
@@ -433,7 +432,7 @@ export default function Home() {
                   'Milestone map to your raise',
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check aria-hidden="true" className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                     <span className="text-stone-700">{item}</span>
                   </li>
                 ))}
@@ -464,7 +463,7 @@ export default function Home() {
                   'Freshly verified before delivery',
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check aria-hidden="true" className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                     <span className="text-stone-700">{item}</span>
                   </li>
                 ))}
@@ -491,7 +490,7 @@ export default function Home() {
                   'Dedicated support',
                 ].map((item) => (
                   <li key={item} className="flex items-start space-x-3">
-                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <Check aria-hidden="true" className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                     <span className="text-stone-700">{item}</span>
                   </li>
                 ))}
@@ -575,12 +574,12 @@ export default function Home() {
       </section>
 
       {/* ── Final CTA ───────────────────────────────────────────────── */}
-      <section className="py-20 px-6 bg-gradient-to-br from-emerald-600 to-teal-700">
+      <section className="py-20 px-6 bg-gradient-to-br from-emerald-700 to-teal-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Get Venture Ready?
           </h2>
-          <p className="text-xl text-emerald-50 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Join founders who are improving their funding success with data-driven, framework-based feedback.
           </p>
           <a
@@ -591,6 +590,8 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      </main>
 
       {/* ── Footer ──────────────────────────────────────────────────── */}
       <footer className="bg-stone-900 text-stone-400 py-16 px-6">

@@ -111,7 +111,9 @@ export default async function BlogPost({ params }: Props) {
       />
       <Navbar />
 
-      <section id="main-content" className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
+      <main id="main-content" tabIndex={-1}>
+
+      <section className="pt-32 pb-12 px-6 bg-white border-b border-stone-100">
         <div className="max-w-3xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-emerald-700 font-semibold hover:text-emerald-900 transition-colors mb-8 text-sm">
             Back to Blog
@@ -139,7 +141,7 @@ export default async function BlogPost({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-gradient-to-br from-emerald-600 to-teal-700">
+      <section className="py-16 px-6 bg-gradient-to-br from-emerald-700 to-teal-800">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Find Out Where Your Deck Stands?</h2>
           <p className="text-lg text-emerald-50 mb-8 max-w-xl mx-auto">
@@ -155,6 +157,8 @@ export default async function BlogPost({ params }: Props) {
           </div>
         </div>
       </section>
+
+      </main>
 
       <footer className="bg-stone-900 text-stone-400 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">

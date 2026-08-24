@@ -9,11 +9,13 @@ export default function SamplesPage() {
 
       <Navbar />
 
+      <main id="main-content" tabIndex={-1}>
+
       {/* Header — pushed down to clear the fixed navbar */}
-      <div id="main-content" className="bg-emerald-600 text-white py-16 mt-[73px]">
+      <div className="bg-emerald-700 text-white py-16 mt-[73px]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Sample Evaluations</h1>
-          <p className="text-xl text-emerald-100 max-w-3xl">
+          <p className="text-xl text-emerald-50 max-w-3xl">
             See what VentureReady customers receive. These are actual excerpts from our comprehensive
             pitch deck evaluations—showing both strengths and areas for improvement.
           </p>
@@ -36,9 +38,9 @@ export default function SamplesPage() {
 
         {/* Sample 1: Grade by Section Overview */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+          <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 1: Section-by-Section Grading</h3>
-            <p className="text-emerald-100 text-sm">Detailed scoring across all critical pitch components</p>
+            <p className="text-emerald-50 text-sm">Detailed scoring across all critical pitch components</p>
           </div>
           <div className="p-6">
             <div className="prose max-w-none">
@@ -46,45 +48,45 @@ export default function SamplesPage() {
                 <table className="min-w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-gray-300">
-                      <th className="text-left py-2 px-3 font-semibold">Slide Category</th>
-                      <th className="text-left py-2 px-3 font-semibold">Grade</th>
-                      <th className="text-left py-2 px-3 font-semibold">Comments</th>
+                      <th scope="col" className="text-left py-2 px-3 font-semibold">Slide Category</th>
+                      <th scope="col" className="text-left py-2 px-3 font-semibold">Grade</th>
+                      <th scope="col" className="text-left py-2 px-3 font-semibold">Comments</th>
                     </tr>
                   </thead>
                   <tbody className="text-gray-700">
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Title Slide</td>
-                      <td className="py-2 px-3 font-bold text-red-600">F</td>
+                      <td className="py-2 px-3 font-bold text-red-700">F</td>
                       <td className="py-2 px-3">Missing CEO info, contact details</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Hook</td>
-                      <td className="py-2 px-3 font-bold text-green-600">A-</td>
+                      <td className="py-2 px-3 font-bold text-green-700">A-</td>
                       <td className="py-2 px-3">Strong market data, could use story</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Problem</td>
-                      <td className="py-2 px-3 font-bold text-green-600">A</td>
+                      <td className="py-2 px-3 font-bold text-green-700">A</td>
                       <td className="py-2 px-3">Excellent, multi-faceted, quantified</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Solution</td>
-                      <td className="py-2 px-3 font-bold text-yellow-600">B</td>
+                      <td className="py-2 px-3 font-bold text-yellow-700">B</td>
                       <td className="py-2 px-3">Clear concept but no product visuals</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Team</td>
-                      <td className="py-2 px-3 font-bold text-green-600">A</td>
+                      <td className="py-2 px-3 font-bold text-green-700">A</td>
                       <td className="py-2 px-3">Strong, diverse, experienced</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Market Size</td>
-                      <td className="py-2 px-3 font-bold text-green-600">A</td>
+                      <td className="py-2 px-3 font-bold text-green-700">A</td>
                       <td className="py-2 px-3">Well researched, credible TAM</td>
                     </tr>
                     <tr className="border-b border-gray-200">
                       <td className="py-2 px-3">Competition</td>
-                      <td className="py-2 px-3 font-bold text-red-600">D</td>
+                      <td className="py-2 px-3 font-bold text-red-700">D</td>
                       <td className="py-2 px-3">Mentioned but never properly compared</td>
                     </tr>
                   </tbody>
@@ -99,14 +101,14 @@ export default function SamplesPage() {
 
         {/* Sample 2: Recommendations */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+          <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 2: Prioritized Recommendations</h3>
-            <p className="text-emerald-100 text-sm">Actionable fixes organized by priority</p>
+            <p className="text-emerald-50 text-sm">Actionable fixes organized by priority</p>
           </div>
           <div className="p-6">
             <div className="space-y-6">
               <div>
-                <h4 className="font-bold text-red-600 text-lg mb-3 flex items-center">
+                <h4 className="font-bold text-red-700 text-lg mb-3 flex items-center">
                   <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-2">!</span>
                   Immediate Fixes (Must Do)
                 </h4>
@@ -127,7 +129,7 @@ export default function SamplesPage() {
               </div>
 
               <div>
-                <h4 className="font-bold text-yellow-600 text-lg mb-3 flex items-center">
+                <h4 className="font-bold text-yellow-700 text-lg mb-3 flex items-center">
                   <span className="bg-yellow-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-2">+</span>
                   Important Improvements
                 </h4>
@@ -150,9 +152,9 @@ export default function SamplesPage() {
 
         {/* Sample 3: Strengths vs Gaps */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+          <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 3: Strengths vs. Critical Gaps</h3>
-            <p className="text-emerald-100 text-sm">Balanced assessment of what's working and what's missing</p>
+            <p className="text-emerald-50 text-sm">Balanced assessment of what's working and what's missing</p>
           </div>
           <div className="p-6">
             <div className="grid md:grid-cols-2 gap-6">
@@ -173,7 +175,7 @@ export default function SamplesPage() {
                     'Market size is compelling',
                   ].map((item) => (
                     <li key={item} className="flex items-start">
-                      <span className="text-green-600 mr-2">✓</span>
+                      <span aria-hidden="true" className="text-green-700 mr-2">✓</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -197,7 +199,7 @@ export default function SamplesPage() {
                     'Go-to-market specifics vague',
                   ].map((item) => (
                     <li key={item} className="flex items-start">
-                      <span className="text-red-600 mr-2">✗</span>
+                      <span aria-hidden="true" className="text-red-700 mr-2">✗</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -219,9 +221,9 @@ export default function SamplesPage() {
 
         {/* Sample 4: Investor Questions */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+          <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 4: Anticipated Investor Questions</h3>
-            <p className="text-emerald-100 text-sm">Prepare for what investors will ask</p>
+            <p className="text-emerald-50 text-sm">Prepare for what investors will ask</p>
           </div>
           <div className="p-6">
             <p className="text-gray-600 mb-4 font-semibold">
@@ -236,10 +238,10 @@ export default function SamplesPage() {
                 { q: '"How will I get a 10x return?"', a: 'Exit strategy underdeveloped' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start p-3 bg-gray-50 rounded-lg">
-                  <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">{i + 1}</span>
+                  <span aria-hidden="true" className="bg-emerald-700 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5 flex-shrink-0">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-gray-900">{item.q}</p>
-                    <p className="text-sm text-gray-600 mt-1">→ {item.a}</p>
+                    <p className="text-sm text-gray-600 mt-1"><span aria-hidden="true">→ </span>{item.a}</p>
                   </div>
                 </div>
               ))}
@@ -249,9 +251,9 @@ export default function SamplesPage() {
 
         {/* Sample 5: Actionable Roadmap */}
         <div className="mb-12 bg-white shadow-lg rounded-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-600 px-6 py-4">
+          <div className="bg-gradient-to-r from-emerald-700 to-teal-700 px-6 py-4">
             <h3 className="text-xl font-bold text-white">Sample 5: Actionable Roadmap</h3>
-            <p className="text-emerald-100 text-sm">Step-by-step path to investor-readiness</p>
+            <p className="text-emerald-50 text-sm">Step-by-step path to investor-readiness</p>
           </div>
           <div className="p-6">
             <div className="space-y-4">
@@ -262,8 +264,8 @@ export default function SamplesPage() {
               ].map((w) => (
                 <div key={w.week} className="border-l-4 border-emerald-600 pl-4 py-2">
                   <h4 className="font-bold text-gray-900 mb-2">{w.week}</h4>
-                  <ul className="space-y-1 text-gray-700 text-sm">
-                    {w.items.map((item) => <li key={item}>• {item}</li>)}
+                  <ul className="space-y-1 text-gray-700 text-sm list-disc pl-5">
+                    {w.items.map((item) => <li key={item}>{item}</li>)}
                   </ul>
                 </div>
               ))}
@@ -275,22 +277,22 @@ export default function SamplesPage() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-8 text-center text-white">
+        <div className="bg-gradient-to-r from-emerald-700 to-teal-700 rounded-lg p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Ready for Your Own Detailed Evaluation?</h2>
-          <p className="text-xl text-emerald-100 mb-6 max-w-2xl mx-auto">
+          <p className="text-xl text-emerald-50 mb-6 max-w-2xl mx-auto">
             Get the same level of detailed, actionable feedback on your pitch deck, business plan,
             or executive summary.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/#pricing"
-              className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition-colors"
+              className="bg-white text-emerald-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition-colors"
             >
               Get Your Evaluation — $97
             </Link>
             <Link
               href="/"
-              className="text-white border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-emerald-600 transition-colors"
+              className="text-white border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-emerald-700 transition-colors"
             >
               Learn More
             </Link>
@@ -303,6 +305,8 @@ export default function SamplesPage() {
           <p className="mt-2">Actual evaluations may vary in length and detail based on the materials submitted.</p>
         </div>
       </div>
+
+      </main>
     </div>
   );
 }

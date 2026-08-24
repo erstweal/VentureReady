@@ -6,7 +6,7 @@ author: "VentureReady.ai"
 tags: ["investor framework"]
 ---
 
-# The Angel Investor in Its Natural Habitat
+## The Angel Investor in Its Natural Habitat
 
 We made a nature documentary about angel investors.
 

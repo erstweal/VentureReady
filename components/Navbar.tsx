@@ -15,7 +15,7 @@ export default function Navbar() {
     <>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-700 focus:text-white focus:rounded-lg focus:font-semibold"
       >
         Skip to main content
       </a>
@@ -44,7 +44,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <Link
               href="/#pricing"
-              className="px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold hover:from-emerald-700 hover:to-teal-800 transition-all"
+              className="px-6 py-2.5 bg-gradient-to-r from-emerald-700 to-teal-800 text-white rounded-lg font-semibold hover:from-emerald-800 hover:to-teal-900 transition-all"
             >
               Get Started
             </Link>
@@ -56,9 +56,9 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-menu"
+            aria-controls={mobileMenuOpen ? 'mobile-menu' : undefined}
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X aria-hidden="true" className="w-6 h-6" /> : <Menu aria-hidden="true" className="w-6 h-6" />}
           </button>
         </div>
 
@@ -72,7 +72,7 @@ export default function Navbar() {
             <Link href="/blog" className="block text-stone-600 hover:text-stone-900 py-2">Blog</Link>
             <Link
               href="/#pricing"
-              className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-lg font-semibold"
+              className="block w-full text-center px-6 py-2.5 bg-gradient-to-r from-emerald-700 to-teal-800 text-white rounded-lg font-semibold"
             >
               Get Started
             </Link>

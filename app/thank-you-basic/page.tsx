@@ -8,7 +8,7 @@ export default function ThankYouBasic() {
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
       <Navbar />
 
-      <div id="main-content" className="max-w-2xl mx-auto px-4 py-24 text-center">
+      <main id="main-content" tabIndex={-1} className="max-w-2xl mx-auto px-4 py-24 text-center">
 
         {/* Success icon */}
         <div className="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -33,7 +33,7 @@ export default function ThankYouBasic() {
               { n: '4', title: 'Receive your report', body: 'Within 24 hours you\'ll receive a comprehensive PDF evaluation report with slide-by-slide scoring, red flags, and actionable recommendations.' },
             ].map((step) => (
               <div key={step.n} className="flex gap-4">
-                <div className="w-8 h-8 rounded-full bg-emerald-600 text-white text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-emerald-700 text-white text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
                   {step.n}
                 </div>
                 <div>
@@ -48,18 +48,18 @@ export default function ThankYouBasic() {
         {/* Contact note */}
         <p className="text-stone-500 text-sm mb-8">
           Questions? Email us at{' '}
-          <a href="mailto:venture@ventureready.ai" className="text-emerald-600 font-semibold hover:underline">
+          <a href="mailto:venture@ventureready.ai" className="text-emerald-700 font-semibold hover:underline">
             venture@ventureready.ai
           </a>
         </p>
 
         <Link
           href="/"
-          className="inline-block px-8 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+          className="inline-block px-8 py-3 bg-emerald-700 text-white rounded-lg font-semibold hover:bg-emerald-800 transition-colors"
         >
           Return to Home
         </Link>
-      </div>
+      </main>
     </div>
   );
 }

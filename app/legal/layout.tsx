@@ -14,7 +14,7 @@ export default function LegalLayout({ children }: { children: React.ReactNode })
     <div className="min-h-screen bg-stone-950 text-stone-300">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-700 focus:text-white focus:rounded-lg focus:font-semibold"
       >
         Skip to main content
       </a>
@@ -23,14 +23,14 @@ export default function LegalLayout({ children }: { children: React.ReactNode })
           <Link href="/" className="text-emerald-400 hover:text-emerald-300 text-sm transition-colors">
             ← Back to VentureReady.ai
           </Link>
-          <span className="text-stone-500 text-sm">Legal</span>
+          <span className="text-stone-400 text-sm">Legal</span>
         </div>
       </header>
 
       <div className="max-w-7xl mx-auto px-6 py-12 flex gap-16">
         <aside className="hidden lg:block w-52 shrink-0">
           <nav className="sticky top-8">
-            <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-4">
+            <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-4">
               Documents
             </p>
             <ul className="space-y-0.5">
@@ -48,7 +48,7 @@ export default function LegalLayout({ children }: { children: React.ReactNode })
           </nav>
         </aside>
 
-        <main id="main-content" className="flex-1 min-w-0 max-w-3xl">
+        <main id="main-content" tabIndex={-1} className="flex-1 min-w-0 max-w-3xl">
           <div className="lg:hidden flex flex-wrap gap-2 mb-10">
             {legalLinks.map(({ href, label }) => (
               <Link

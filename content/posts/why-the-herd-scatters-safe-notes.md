@@ -6,7 +6,7 @@ author: "VentureReady.ai"
 tags: ["investor framework"]
 ---
 
-# Why the Herd Scatters: What Your Funding Instrument Says Before You Do
+## Why the Herd Scatters: What Your Funding Instrument Says Before You Do
 
 If you've seen our nature documentary, you know the moment: a founder says the words "uncapped SAFE," and a room full of angel investors quietly reaches for their phones. The herd moves on.
 
