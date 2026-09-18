@@ -22,7 +22,7 @@ A grant reviewer is evaluating whether the science is sound, novel, and worth pu
 
 An angel group is evaluating whether this becomes a company that returns capital. What wins there is evidence that someone will pay, a specific first market, a team that can sell as well as build, and a plausible path to an exit.
 
-Both documents describe the same technology. They are not variations of each other. They're different genres with different structures, different evidence standards, and different definitions of the word "risk."
+Both documents describe the same technology. Same facts, different burden of proof — different genres with different structures, different evidence standards, and different definitions of the word "risk."
 
 To a grant reviewer, risk is technical: will this work?
 
@@ -36,9 +36,9 @@ So when a spinout founder reformats a Phase II narrative into fifteen slides, th
 
 **Lead with the customer, not the technology.** The most common spinout deck opens with the science and arrives at the customer somewhere around slide nine. Invert it. The investor needs to know who has this problem, how badly, and what they currently do about it — *before* they can evaluate whether your solution matters. The technology is the reason you'll win, not the reason they should care.
 
-**Treat your grants as validation, not as a business model.** This is the difference between a spinout that raises and one that doesn't. Non-dilutive funding is genuinely attractive to angels: federal money absorbed your early technical risk, someone with subject-matter expertise reviewed your work and said yes, and your equity dollars now buy commercial progress instead of lab progress. Say exactly that.
+**Treat your grants as validation, not as a business model.** This is the difference between a spinout that raises and one that doesn't. Angels like seeing grant money: federal funding absorbed your early technical risk, someone with subject-matter expertise reviewed your work and said yes, and your equity dollars now buy commercial progress instead of lab progress. Put that in the deck.
 
-What you must not do is present the grant pipeline as your growth plan. A company whose next three milestones are all agency awards reads as a research organization, not a startup. Experienced angels have watched companies spend a decade on the grant treadmill producing excellent science and no enterprise value. They will pass, and they usually won't tell you that's why.
+Don't make the grant pipeline your growth plan. A company whose next three milestones are all agency awards reads as a research organization, not a startup. Experienced angels have watched companies spend a decade on the grant treadmill producing excellent science and no enterprise value. They will pass, and they usually won't tell you that's why.
 
 **Translate technical milestones into commercial ones.** Phase I proved feasibility. Phase II is building the thing. Neither is a milestone an investor can price. What they need on your Ask slide is what the equity buys: first paying pilot, regulatory submission filed, a manufacturing partner signed, a repeatable sales motion demonstrated. The strongest version connects both — here's the federal money doing the technical work, here's the equity doing the commercial work, and here's the milestone that makes the next round obvious.
 
@@ -54,7 +54,7 @@ Founders coming out of a lab often experience this translation as dumbing down t
 
 It isn't a downgrade. It's a different proof.
 
-Your grant narrative proved the science deserved public investment. Your deck has to prove the company deserves private investment — and those are separate claims, each requiring its own evidence. The science being excellent is a premise of the second claim, not the claim itself.
+The grant proved the science. The deck has to prove the company. Those are separate claims, and each one needs its own evidence.
 
 The founders who internalize that stop resenting the deck and start using it. They keep pursuing non-dilutive funding, because it's the cheapest capital they'll ever raise. They just stop confusing it with a fundraising strategy.
 
