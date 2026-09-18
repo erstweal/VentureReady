@@ -59,6 +59,8 @@ Founders ask us how to pick the amount. There's no formula, but there is a test:
 
 Too small is a real failure mode, and an underrated one. A raise that runs out three months before the milestone lands is worse than no raise, because you'll be fundraising from a position of visible weakness. Investors know this, and an ask that's obviously too thin for the plan reads as either optimism or inexperience.
 
+The same test works in months. Investors commonly look for a raise to fund 18 to 24 months, and the reason isn't survival. A company that raises enough for six or nine months starts its next raise almost as soon as the money arrives, before the milestones it promised have had time to land. Under twelve months, a raise usually reads as a bridge, whether or not you call it one.
+
 Too large has a different tell. At pre-seed, an ask well above what the stage supports usually signals that the founder hasn't spent time in this market — and it invites a valuation conversation you're not positioned to win. If the plan genuinely requires more capital than the stage typically provides, the deck should say why, and the milestone argument has to carry that weight.
 
 Somewhere in between is a number you can defend line by line. That's the one.
@@ -71,12 +73,12 @@ Six things, and they fit comfortably on one slide:
 
 1. **The amount** — one number, stated plainly.
 2. **The instrument and terms** — SAFE, note, or priced; cap, discount, or valuation. Or an honest statement that you're seeking a lead to set terms.
-3. **The runway** — how many months, and to what date.
+3. **The runway** — how many months, and to what date. Eighteen to twenty-four months is the range most investors look for.
 4. **Use of funds** — three to five categories that sum exactly to the amount.
 5. **The milestones the money buys** — specific and checkable, not "traction" or "growth."
 6. **What it sets up** — the next round, its approximate size, and its timing.
 
-If you have room, add what's already committed. "$150K of the $500K is soft-circled" changes the temperature of a conversation more than almost anything else on the slide.
+If you have room, add what's already committed, and from whom. "$150K of the $500K is soft-circled, including our pre-seed investors coming back in" changes the temperature of a conversation more than almost anything else on the slide. People who already know the company putting in more money is evidence no slide can manufacture.
 
 ---
 
