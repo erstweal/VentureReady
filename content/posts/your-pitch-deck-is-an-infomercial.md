@@ -1,6 +1,6 @@
 ---
 title: "Your Pitch Deck Is an Infomercial (and Investors Can Tell)"
-description: "We made a 90s infomercial for a product that doubles your TAM. The joke works because the real thing shows up in pitch decks constantly — and investors spot it before you finish the slide."
+excerpt: "We made a 90s infomercial for a product that doubles your TAM. The joke works because the real thing shows up in pitch decks constantly — and investors spot it before you finish the slide."
 date: "2026-09-21"
 author: "VentureReady.ai"
 tags: ["investor framework"]

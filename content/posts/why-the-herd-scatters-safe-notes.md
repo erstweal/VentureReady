@@ -1,12 +1,12 @@
 ---
 title: "Why the Herd Scatters: What Your Funding Instrument Says Before You Do"
-description: "Our nature documentary showed a room full of angel investors reaching for their phones at the words 'uncapped SAFE.' The joke was real. Here's the serious version — why many angel groups won't touch SAFEs, and what your instrument choice signals before you've finished your first slide."
+excerpt: "Our nature documentary showed a room full of angel investors reaching for their phones at the words 'uncapped SAFE.' The joke was real. Here's the serious version — why many angel groups won't touch SAFEs, and what your instrument choice signals before you've finished your first slide."
 date: "2026-08-13"
 author: "VentureReady.ai"
 tags: ["investor framework"]
 ---
 
-## Why the Herd Scatters: What Your Funding Instrument Says Before You Do
+# Why the Herd Scatters: What Your Funding Instrument Says Before You Do
 
 If you've seen our nature documentary, you know the moment: a founder says the words "uncapped SAFE," and a room full of angel investors quietly reaches for their phones. The herd moves on.
 
