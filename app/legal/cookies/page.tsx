@@ -10,7 +10,7 @@ export default function CookiesPage() {
     <article>
       <h1 className="text-3xl font-bold text-white mb-2">Cookie Policy</h1>
       <p className="text-stone-500 text-sm mb-10 pb-10 border-b border-stone-800">
-        Last Updated: February 5, 2026
+        Last Updated: September 21, 2026
       </p>
 
       <section className="mb-10">
@@ -44,6 +44,15 @@ export default function CookiesPage() {
           <li><strong className="text-stone-300">User Behavior:</strong> How users navigate our platform</li>
         </ul>
 
+        <h3 className="text-base font-semibold text-stone-200 mb-3">Advertising Cookies</h3>
+        <p className="text-stone-400 leading-relaxed mb-3">
+          Set by Google when you visit our site, including after clicking one of our ads:
+        </p>
+        <ul className="list-disc list-inside text-stone-400 space-y-2 mb-6 ml-2">
+          <li><strong className="text-stone-300">Conversion Measurement:</strong> Whether a visit from one of our ads led to a purchase</li>
+          <li><strong className="text-stone-300">Remarketing:</strong> May be used to show our ads to past visitors on other websites</li>
+        </ul>
+
         <h3 className="text-base font-semibold text-stone-200 mb-3">Preference Cookies</h3>
         <p className="text-stone-400 leading-relaxed mb-3">Remember your settings and choices:</p>
         <ul className="list-disc list-inside text-stone-400 space-y-2 ml-2">
@@ -61,7 +70,13 @@ export default function CookiesPage() {
           <li><strong className="text-stone-300">Clerk:</strong> Authentication and user management</li>
           <li><strong className="text-stone-300">Stripe:</strong> Payment processing</li>
           <li><strong className="text-stone-300">Vercel Analytics:</strong> Website performance and analytics</li>
+          <li><strong className="text-stone-300">Google Ads:</strong> Advertising measurement and remarketing</li>
+          <li><strong className="text-stone-300">Google Analytics:</strong> We may use Google Analytics for usage analysis, including for advertising purposes</li>
         </ul>
+        <p className="text-stone-400 leading-relaxed mt-3">
+          Google&apos;s use of this information is governed by the{" "}
+          <a href="https://policies.google.com/privacy" className="text-emerald-400 hover:text-emerald-300 transition-colors">Google Privacy Policy</a>.
+        </p>
       </section>
 
       <section className="mb-10">
@@ -76,6 +91,13 @@ export default function CookiesPage() {
           <li><strong className="text-stone-300">Firefox:</strong> Settings › Privacy & Security › Cookies and Site Data</li>
           <li><strong className="text-stone-300">Safari:</strong> Preferences › Privacy › Cookies and website data</li>
           <li><strong className="text-stone-300">Edge:</strong> Settings › Cookies and site permissions</li>
+        </ul>
+
+        <h3 className="text-base font-semibold text-stone-200 mb-3">Opting Out of Advertising Cookies</h3>
+        <ul className="list-disc list-inside text-stone-400 space-y-2 mb-6 ml-2">
+          <li><a href="https://adssettings.google.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">Google Ad Settings</a> — turn off personalized ads from Google</li>
+          <li><a href="https://optout.aboutads.info" className="text-emerald-400 hover:text-emerald-300 transition-colors">Digital Advertising Alliance opt-out</a> — opt out of interest-based ads from participating companies</li>
+          <li><a href="https://tools.google.com/dlpage/gaoptout" className="text-emerald-400 hover:text-emerald-300 transition-colors">Google Analytics opt-out add-on</a> — stop Google Analytics from collecting data in your browser</li>
         </ul>
 
         <h3 className="text-base font-semibold text-stone-200 mb-3">Impact of Disabling Cookies</h3>
@@ -134,6 +156,28 @@ export default function CookiesPage() {
               <tr>
                 <td className="py-3 pr-6">Speed Insights performance tracking</td>
                 <td className="py-3">Session</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-base font-semibold text-stone-200 mb-3 mt-6">Advertising Cookies</h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-stone-400 border-collapse">
+            <thead>
+              <tr className="border-b border-stone-700">
+                <th className="text-left py-3 pr-6 text-stone-300 font-medium">Purpose</th>
+                <th className="text-left py-3 pr-6 text-stone-300 font-medium">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-stone-800">
+                <td className="py-3 pr-6">Google Ads conversion measurement (_gcl_au)</td>
+                <td className="py-3">90 days</td>
+              </tr>
+              <tr>
+                <td className="py-3 pr-6">Google ad personalization and remarketing (set on Google domains)</td>
+                <td className="py-3">Up to 13 months</td>
               </tr>
             </tbody>
           </table>

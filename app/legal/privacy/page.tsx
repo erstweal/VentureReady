@@ -10,7 +10,7 @@ export default function PrivacyPage() {
     <article>
       <h1 className="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
       <p className="text-stone-500 text-sm mb-10 pb-10 border-b border-stone-800">
-        Last Updated: February 5, 2026
+        Last Updated: September 21, 2026
       </p>
 
       <section className="mb-10">
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
         <ul className="list-disc list-inside text-stone-400 space-y-2 ml-2">
           <li><strong className="text-stone-300">Usage Data:</strong> How you interact with our Services, pages visited, features used</li>
           <li><strong className="text-stone-300">Device Information:</strong> IP address, browser type, operating system, device identifiers</li>
-          <li><strong className="text-stone-300">Cookies and Similar Technologies:</strong> We use cookies to improve your experience and analyze usage</li>
+          <li><strong className="text-stone-300">Cookies and Similar Technologies:</strong> We and our partners, including Google, use cookies to improve your experience, analyze usage, and measure our advertising</li>
         </ul>
       </section>
 
@@ -69,11 +69,42 @@ export default function PrivacyPage() {
         <h2 className="text-xl font-semibold text-white mb-4">Information Sharing</h2>
         <p className="text-stone-400 leading-relaxed mb-3">We may share your information with:</p>
         <ul className="list-disc list-inside text-stone-400 space-y-2 mb-4 ml-2">
-          <li><strong className="text-stone-300">Service Providers:</strong> Including Anthropic (AI), Stripe (payments), Clerk (authentication)</li>
+          <li><strong className="text-stone-300">Service Providers:</strong> Including Anthropic (AI), Stripe (payments), Clerk (authentication), Vercel (hosting and site analytics), and Google (advertising and analytics)</li>
           <li><strong className="text-stone-300">Legal Requirements:</strong> When required by law or to protect our rights</li>
           <li><strong className="text-stone-300">Business Transfers:</strong> In connection with mergers, acquisitions, or asset sales</li>
         </ul>
-        <p className="text-stone-400 leading-relaxed font-medium">We do not sell your personal information to third parties.</p>
+        <p className="text-stone-400 leading-relaxed font-medium mb-3">We do not sell your personal information for money.</p>
+        <p className="text-stone-400 leading-relaxed">
+          Our use of advertising cookies, described below, may be considered &quot;sharing&quot; of personal
+          information for targeted advertising under some U.S. state privacy laws. You can opt out using the
+          controls listed in the Advertising and Analytics section.
+        </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold text-white mb-4">Advertising and Analytics</h2>
+        <p className="text-stone-400 leading-relaxed mb-3">
+          We advertise our Services using Google Ads. When you visit our website, Google&apos;s tag may set
+          cookies and collect information such as the pages you visit, your device and browser type, your
+          IP address, and whether you made a purchase after clicking one of our ads. We use this information
+          to measure how well our advertising works. Google may also use it to show our ads to people who
+          have previously visited our website (remarketing).
+        </p>
+        <p className="text-stone-400 leading-relaxed mb-3">
+          We may also use Google Analytics to understand how visitors use our website, including for
+          advertising purposes such as audience measurement and remarketing.
+        </p>
+        <p className="text-stone-400 leading-relaxed mb-3">
+          Google processes this information under its own{" "}
+          <a href="https://policies.google.com/privacy" className="text-emerald-400 hover:text-emerald-300 transition-colors">Privacy Policy</a>. You can learn{" "}
+          <a href="https://policies.google.com/technologies/partner-sites" className="text-emerald-400 hover:text-emerald-300 transition-colors">how Google uses information from sites that use its services</a>.
+        </p>
+        <p className="text-stone-400 leading-relaxed mb-3">To opt out of personalized advertising:</p>
+        <ul className="list-disc list-inside text-stone-400 space-y-2 ml-2">
+          <li><a href="https://adssettings.google.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">Google Ad Settings</a></li>
+          <li><a href="https://optout.aboutads.info" className="text-emerald-400 hover:text-emerald-300 transition-colors">Digital Advertising Alliance opt-out</a></li>
+          <li><a href="https://tools.google.com/dlpage/gaoptout" className="text-emerald-400 hover:text-emerald-300 transition-colors">Google Analytics opt-out browser add-on</a></li>
+        </ul>
       </section>
 
       <section className="mb-10">
@@ -141,6 +172,7 @@ export default function PrivacyPage() {
         <ul className="list-disc list-inside text-stone-400 space-y-2 mb-4 ml-2">
           <li><strong className="text-stone-300">Essential Cookies:</strong> Required for authentication and security</li>
           <li><strong className="text-stone-300">Analytics Cookies:</strong> Help us understand how visitors use our Services</li>
+          <li><strong className="text-stone-300">Advertising Cookies:</strong> Measure the effectiveness of our ads and may be used to show you our ads on other websites</li>
           <li><strong className="text-stone-300">Preference Cookies:</strong> Remember your settings and preferences</li>
         </ul>
         <p className="text-stone-400 leading-relaxed">

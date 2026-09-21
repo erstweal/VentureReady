@@ -5,6 +5,7 @@ import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Script from 'next/script';
+import CookieNotice from '@/components/CookieNotice';
 
 // Google Ads tag (account-level). Conversion events are fired from individual pages.
 const GOOGLE_ADS_ID = 'AW-18442369785';
@@ -274,6 +275,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <SpeedInsights />
+        <CookieNotice />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
           strategy="afterInteractive"
