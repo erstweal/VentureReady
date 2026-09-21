@@ -1,9 +1,30 @@
 'use client';
 
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function ThankYouBasic() {
+  // Google Ads purchase conversion. Fires only on a real Stripe redirect,
+  // which carries ?session_id={CHECKOUT_SESSION_ID}. The session ID is used as
+  // the transaction ID, so a reload or revisit is not counted twice.
+  useEffect(() => {
+    const sessionId = new URLSearchParams(window.location.search).get('session_id');
+    if (!sessionId) return;
+    window.gtag?.('event', 'conversion', {
+      send_to: 'AW-18442369785/c29FCIXMqv8cEPn1gNpE',
+      value: 97.0,
+      currency: 'USD',
+      transaction_id: sessionId,
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
       <Navbar />
