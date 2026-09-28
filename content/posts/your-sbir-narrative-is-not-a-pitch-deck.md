@@ -1,7 +1,7 @@
 ---
 title: "Your SBIR Narrative Is Not a Pitch Deck"
 excerpt: "Grant reviewers and angel investors reward opposite things. Spinout founders keep submitting the first document to the second audience — and losing rooms they should win."
-date: "2026-09-28"
+date: "2026-09-18"
 author: "VentureReady.ai"
 tags: ["investor framework"]
 ---
